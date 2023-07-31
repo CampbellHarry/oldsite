@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Harry's Portfolio</title>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Harry's Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hidden">
+            <span class="box1-text" style="display: none;">Hello I am <span class="underline">Harry</span>.</span>
+            <span class="box2-text" data-text="A professional frontend developer," style="display:none;">A <span class="underline" >professional</span> front-end developer.</span>
+            <span class="box2-text" data-text="A competent python Scripter," style="display:none;">A <span class="underline">competent</span> python Scripter.</span>
+            <span class="box2-text" data-text="A proficient IT Specialist." style="display:none;">A <span class="underline">proficient</span> IT Specialist.</span>
+            <span class="box2-text" data-text="A security-focused developer" style="display:none;">A <span class="underline">security-focused</span> developer.</span>
+          </div>
+        </section>
+
+        <section id="projects" class="hidden box3">
+            <div class="box3b">
+                <h3><u>Projects:</u></h3>
+            </div>
+        </section>
+        <section id="projects" class="hidden box3">
+            <div class="project-box">
+                <a href="https://github.com/IT-Sav/ticket" target="_blank">Ticket website</a>
+            </div>
+            <div class="project-box">
+                <a href="https://github.com/IT-Sav/Banking1" target="_blank">Banking website</a>
+            </div>
+            <hr style="height:3px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+        </section>
+        <section class="hidden">
+            <div class="box3c">
+                <h1><u>About me</u></h1>
+            </div>
+        </section>
+        <section class="hidden about-container">
+            <div class="about about2">
+                <p>Security Management: Head of Security at Big Barn Rally and Little Barn Rally, adept at leading teams, proactive crowd management, risk assessments, and maintaining secure perimeters.</p>
+            </div>
+            <div class="about about3">
+                <p>Web Development: Front-end developer skilled in HTML, CSS, and expanding expertise in JavaScript for dynamic web applications. Committed to industry best practices and continuous learning.</p>
+            </div>
+            <div class="about about4">
+                <p>Customer Service Excellence: Proven track record of exceptional service, strong interpersonal skills, adept at handling inquiries and resolving issues efficiently.</p>
+            </div>
+            <div class="about about5">
+                <p>IT Proficiency: 3 years of IT experience, troubleshooting hardware/software, maintaining networks, and implementing efficient solutions. Enthusiastic Python scripter exploring automation.</p>
+            </div>
+            <div class="about about6">
+                <p>Passionate, driven, and dedicated to delivering outstanding customer service and crafting engaging web experiences.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links" id="contact">
+            <a href="https://github.com/IT-Sav">GitHub</a>
+            <a href="https://linkedin.com/in/itharrycampbell">LinkedIn</a>
+        </div>
+    </footer>
+    
+</body>
+<script>
+    const textElements1 = document.querySelectorAll('.box1-text');
+    const textElements2 = document.querySelectorAll('.box2-text');
+    let currentIndex1 = 0;
+    let currentIndex2 = 0;
+
+    function showNextText() {
+        textElements1[currentIndex1].style.display = 'none';
+        currentIndex1 = (currentIndex1 + 1) % textElements1.length;
+        textElements1[currentIndex1].style.display = 'inline';
+
+        textElements2[currentIndex2].style.display = 'none';
+        currentIndex2 = (currentIndex2 + 1) % textElements2.length;
+        textElements2[currentIndex2].style.display = 'inline';
+    }
+
+    // Show the first text elements
+    textElements1[currentIndex1].style.display = 'inline';
+    textElements2[currentIndex2].style.display = 'inline';
+
+    // Call the showNextText function every 2 seconds (2000 milliseconds)
+    setInterval(showNextText, 2000);
+
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+function ctrlShiftKey(e, keyCode) {
+return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
+
+document.onkeydown = (e) => {
+// Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+if (
+event.keyCode === 123 ||
+ctrlShiftKey(e, 'I') ||
+ctrlShiftKey(e, 'J') ||
+ctrlShiftKey(e, 'C') ||
+(e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+)
+return false;
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+        } else{
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden')
+hiddenElements.forEach((el) => observer.observe(el));
+
+</script>
+</html>
