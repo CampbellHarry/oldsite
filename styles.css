@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 70vh;
+    font-size: xx-large;
+}
+
+header {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #333333;
+    color: b;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333333;
+}
+
+main {
+    padding: 20px;
+}
+
+.box1-text,
+.box2-text {
+  font-size: 70px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.box1-text::after {
+    content: attr(data-text);
+    background-clip: text;
+    background-image: linear-gradient(to right, #40F99B, #279AF1);
+    -webkit-background-clip: text;
+    opacity: 1;
+    animation: move 1s forwards;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.box3 {
+    text-align: center;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    border-radius: 25px;
+}
+.box3b{
+    text-align: center;
+    background-image: linear-gradient(to left, #23B5D3, #000000);
+    margin: 0;
+    padding: 0;
+    border-radius: 25px;
+    height: 50px;
+    width: 400px;
+    font-size: xx-large;
+    font-size: 40px;
+    color: white;
+}
+.box3c{
+    color: white;
+}
+
+.project-box {
+    width: 400px;
+    height: 110px;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #40F99B, #23B5D3);
+    font-size: 24px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.project-box a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.project-box:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-image: linear-gradient(to center, #23B5D3, black);
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0%;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0%;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 10px;
+    bottom: 0%;
+}
+
+.social-links a:hover {
+    color: #40F99B;
+}
+
+/* Color Palette */
+:root {
+    --red-color: black;
+    --green-color: black;
+    --blue-color: #23B5D3;
+}
+
+body {
+    background-color: black;
+}
+
+header{
+    background-image: linear-gradient(to right, #23B5D3, black);
+    color: white;
+}
+nav ul li a:hover,
+.project-box {
+    background-image: linear-gradient(to right, var(--green-color), var(--blue-color));
+}
+/* Additional styles for specific elements */
+
+.hidden{
+    opacity: 0;
+    transition: 4.5s;
+}
+.show{
+    opacity: 1;
+    transition: 4.5s;
+}
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about {
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #40F99B, #279AF1);
+    font-size: 24px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.about p {
+    margin: 0;
+}
+
+.about a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.about:hover {
+    transform: scale(1.1);
+}
+  
+
+
+.box1-text {
+  background-image: linear-gradient(45deg, #ff3366, #66ccff, #ff3366);
+  animation: moveGradient1 5s linear infinite;
+}
+
+.box2-text {
+  display: none;
+  background-image: linear-gradient(45deg, #33ccff, #66ff66, #33ccff);
+  animation: moveGradient2 5s linear infinite;
+}
+
+@keyframes moveGradient1 {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes moveGradient2 {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
