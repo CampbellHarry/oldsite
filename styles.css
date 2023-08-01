@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0px;
     font-family: monospace;
     background-color: black;
     scroll-behavior: smooth;
+    max-width: 1200px;
 }
 
 section{
@@ -31,8 +32,9 @@ nav {
 
 nav ul {
     list-style: none;
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
+    display: block;
 }
 
 nav ul li {
@@ -59,11 +61,11 @@ main {
 
 .box1-text,
 .box2-text {
-  font-size: 70px;
-  font-weight: bold;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+    font-size: 50px; /* Adjust the font size as per your design */
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .box1-text::after {
@@ -196,7 +198,7 @@ nav ul li a:hover,
 
 .about {
     width: 500px;
-    height: 150px;
+    height: 200px;
     border-radius: 5px;
     margin: 20px;
     padding: 20px;
@@ -225,7 +227,12 @@ nav ul li a:hover,
 .about:hover {
     transform: scale(1.1);
 }
-  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
   .underline {
     border-bottom: 5px solid #279AF1/* Adjust color and thickness as needed */
