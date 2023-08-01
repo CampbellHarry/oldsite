@@ -198,7 +198,7 @@ nav ul li a:hover,
 
 .about {
     width: 50%;
-    height: 370px;
+    height: auto;
     border-radius: 5px;
     margin: 20px;
     padding: 20px;
