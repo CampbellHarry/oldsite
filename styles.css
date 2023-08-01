@@ -206,13 +206,14 @@ nav ul li a:hover,
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to right, #40F99B, #279AF1);
-    font-size: 24px;
+    font-size: 15px;
     color: black 4px;
     transition: transform 0.3s ease;
     word-wrap: break-word;
     white-space: pre-wrap;
     word-break: break-word;
     max-width: 400px;
+
 }
 
 .about p {
