@@ -52,6 +52,7 @@ entries.forEach((entry) => {
 const hiddenElements = document.querySelectorAll('.hidden')
 hiddenElements.forEach((el) => observer.observe(el));
 
+
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('a[data-scroll]');
     links.forEach(link => {
