@@ -6,7 +6,7 @@ body {
     font-family: monospace;
     background-color: black;
     scroll-behavior: smooth;
-    max-width: 1200px;
+    max-width: 100%;
 }
 
 section{
@@ -125,6 +125,20 @@ main {
     color: #ffffff;
     transition: transform 0.3s ease;
 }
+.project-box1 {
+    width: 400px;
+    height: 110px;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #40F99B, #23B5D3);
+    font-size: 24px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
 
 .project-box a {
     text-decoration: none;
@@ -140,6 +154,9 @@ footer {
     padding: 20px 0;
     text-align: center;
     bottom: 0%;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
 }
 
 .social-links {
@@ -213,7 +230,6 @@ nav ul li a:hover,
     white-space: pre-wrap;
     word-break: break-word;
     max-width: 400px;
-
 }
 
 .about p {

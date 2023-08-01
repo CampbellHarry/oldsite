@@ -51,3 +51,21 @@ entries.forEach((entry) => {
 
 const hiddenElements = document.querySelectorAll('.hidden')
 hiddenElements.forEach((el) => observer.observe(el));
+
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[data-scroll]');
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const target = document.getElementById(this.dataset.scroll);
+            const topOffset = 70;
+            const elementposition = target.getBoundingClientRect().top;
+            const offsetPosition = elementposition - topOffset;
+
+            window.scrollBy({
+                top: offsetPosition,
+                behavior: 'smooth'
+            })
+        })
+    })
+})
