@@ -17,8 +17,8 @@ function showNextText() {
 textElements1[currentIndex1].style.display = 'inline';
 textElements2[currentIndex2].style.display = 'inline';
 
-// Call the showNextText function every 2 seconds (2000 milliseconds)
-setInterval(showNextText, 2000);
+// Call the showNextText function every 3 seconds (2000 milliseconds)
+setInterval(showNextText, 3000);
 
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
@@ -70,3 +70,14 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     })
 })
+
+// For the github clicker bank
+function redirectToGitHub() {
+    window.open("https://github.com/IT-Sav/Banking1", "_blank");
+}
+
+// for github clicker ticket
+
+function redirectToGitHub2() {
+    window.open("https://github.com/IT-Sav/ticket", "_blank");
+}

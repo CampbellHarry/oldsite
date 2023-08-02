@@ -6,6 +6,7 @@
     <title>Welcome to Harry's Portfolio</title>
     <link rel="icon" type="image/png" href="img/20230716_110559_1.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" />
 </head>
 <body>
     <header>
@@ -27,6 +28,7 @@
             <span class="box2-text" data-text="A competent python Scripter," style="display:none;">A <span class="underline">competent</span> python scripter.</span>
             <span class="box2-text" data-text="A proficient IT Specialist." style="display:none;">A <span class="underline">proficient</span> IT connoisseur.</span>
             <span class="box2-text" data-text="A security-focused developer" style="display:none;">A <span class="underline">security-focused</span> developer.</span>
+            <span class="box2-text" data-text="A intermediate back-end developer" style="display:none;">A <span class="underline">intermediate</span> back-end developer.</span>
           </div>
         </section>
 
@@ -36,11 +38,61 @@
             </div>
         </section>
         <section id="projects" class="hidden box3">
-            <div class="project-box">
-                <a href="https://github.com/IT-Sav/ticket" target="_blank">Ticket website</a>
+            <div class="project-box" onclick="redirectToGitHub2()">
+                <div class="projrole">
+                    <h2>Lead developer</h2>
+                </div>
+                <div class="projused">
+                    <span class="material-symbols-outlined">
+                        html
+                        </span>
+                        <span class="material-symbols-outlined">
+                            javascript
+                            </span>
+                            <span class="material-symbols-outlined">
+                                css
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    database
+                                    </span>
+                </div>
+                <div class="photoproj">
+                    <img src="img/ticket.png" alt="Github ticket code." style="height: 200px; width: 350px;">
+                    <div class="projname">
+                        <h2>IT Ticket site</h2>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
-            <div class="project-box">
-                <a href="https://github.com/IT-Sav/Banking1" target="_blank">Banking website</a>
+            </div>
+            <div class="project-box" onclick="redirectToGitHub()">
+                <div class="projrole">
+                    <h2>Lead developer</h2>
+                </div>
+                <div class="projused">
+                    <span class="material-symbols-outlined">
+                        html
+                        </span>
+                        <span class="material-symbols-outlined">
+                            javascript
+                            </span>
+                            <span class="material-symbols-outlined">
+                                css
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    database
+                                    </span>
+                    
+                </div>
+                <div class="photoproj">
+                    <img src="img/Banking.png" alt="Github banking code." style="height: 200px; width: 350px;">
+                    <div class="projname">
+                        <h2>Banking website</h2>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
             <hr style="height:3px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
         </section>
@@ -50,17 +102,82 @@
             </div>
         </section>
         <section class="hidden about-container" id="about">
-            <div class="about about3">
-                <p>Web Development: Front-end developer skilled in HTML, CSS, and expanding expertise in JavaScript for dynamic web applications. Committed to industry best practices and continuous learning.</p>
+            <div class="about">
+                <div class="aboutcode">
+                    <h3>Web Development</h3>
+                </div>
+                <div class="aboutdev">
+                    <span class="material-symbols-outlined">
+                        html
+                        </span>
+                        <span class="material-symbols-outlined">
+                            javascript
+                            </span>
+                            <span class="material-symbols-outlined">
+                                css
+                                </span>
+                </div>
+                <div class="abouttext">
+                <p>Front-end developer skilled in HTML, CSS, and expanding expertise in JavaScript for dynamic web applications. Committed to industry best practices and continuous learning.</p>
+                </div>
             </div>
             <div class="about about4">
-                <p>Customer Service Excellence: Proven track record of exceptional service, strong interpersonal skills, adept at handling inquiries and resolving issues efficiently.</p>
+                <div class="aboutcode">
+                    <h3 style="font-size: 30px;">Customer Service</h3>
+                </div>
+                <div class="aboutdev">
+                    <span class="material-symbols-outlined">
+                        groups
+                        </span>
+                        <span class="material-symbols-outlined">
+                            computer
+                            </span>
+                            <span class="material-symbols-outlined">
+                                shield_person
+                                </span>
+                </div>
+                <div class="abouttext">
+                <p style="font-size: 27px;">Proven track record of exceptional service, strong interpersonal skills, adept at handling inquiries and resolving issues efficiently.</p>
+                </div>
             </div>
             <div class="about about5">
-                <p>At just 16 years old, I've already gained 2 years of self experience in IT, where I've honed my skills in troubleshooting hardware and software, maintaining networks, and implementing efficient solutions. My passion for technology extends to Python scripting and web design. With an early start in the field, I'm eager to continue my journey</p>
+                <div class="aboutcode">
+                    <h3 style="font-size: 23px;">Information Technology</h3>
+                </div>
+                <div class="aboutdev">
+                    <span class="material-symbols-outlined">
+                        keyboard
+                        </span>
+                        <span class="material-symbols-outlined">
+                            engineering
+                            </span>
+                            <span class="material-symbols-outlined">
+                                troubleshoot
+                                </span>
+                </div>
+                <div class="abouttext">
+                <p style="font-size: 17px;">At just 16 years old, I've already gained 2 years of my own self experience in IT, where I've honed my skills in troubleshooting hardware and software, maintaining networks, and implementing efficient solutions. My passion for technology extends to Python scripting and web design. With an early start in the field, I'm eager to continue my journey.</p>
+                </div>
             </div>
             <div class="about about6">
-                <p>Passionate, driven, and dedicated to delivering outstanding customer service and crafting engaging web experiences.</p>
+                <div class="aboutcode">
+                    <h3>Backend</h3>
+                </div>
+                <div class="aboutdev">
+                    <span class="material-symbols-outlined">
+                        dns
+                        </span>
+                        <span class="material-symbols-outlined">
+                            tabs
+                            </span>
+                            <span class="material-symbols-outlined">
+                                database
+                                </span>
+                </div>
+                <div class="abouttext">
+                <p>
+                    As an intermediate back-end scripter, I primarily code in Python to complete back-end tasks. While I am relatively new to this field, I take pride in developing all the back-end code for my projects independently.</p>
+                </div>
             </div>
         </section>
     </main>
