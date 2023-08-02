@@ -368,12 +368,11 @@ nav ul li a:hover,
     position: absolute; /* Add this line to position the .photoproj absolutely */
     top: 10px;
     left: 4.5%;
-    border-width: 2px;
     border-style: solid;
     border-color: #000000;
     font-size: xx-large;
     text-indent: 5px;
-    border-width: 5px;
+    border-width: 3px;
 }
 .aboutdev{
     width: 100px;
