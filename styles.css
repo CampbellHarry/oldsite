@@ -175,6 +175,7 @@ main {
     border-width: 1px;
     border-style: solid;
     border-color: rgb(0, 225, 255);
+    border-radius: 10px;
 }
 
 .projname{
@@ -474,13 +475,3 @@ nav ul li a:hover,
     background-position: 0% 50%;
   }
 }
-
-
-  
-  
-  
-  
-  
-  
-  
-  
