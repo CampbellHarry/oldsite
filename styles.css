@@ -1,5 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    .about-container {
+        justify-content: center;
+    }
+    .about {
+        width: 100%;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .about-container {
+        justify-content: center;
+    }
+    .about {
+        width: 48%;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+    .about-container {
+        justify-content: space-between;
+    }
+    .about {
+        width: 30%;
+    }
+}
+
+/* Additional mobile styles */
+@media only screen and (max-width: 514px) {
+    /* Add any specific mobile styles here */
+    .project-box {
+        width: 90%; /* Adjust the width as needed */
+    }
+}
+
 body {
     margin: 0 auto;
     padding: 0px;
@@ -111,6 +149,15 @@ main {
 .box3c{
     color: white;
 }
+
+.proj-container {
+    display: fixed;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 50px;
+  }
 
 .project-box {
     width: 400px;
@@ -335,10 +382,11 @@ nav ul li a:hover,
     transition: 5s;
 }
 .about-container {
-    display: flex;
+    display: fixed;
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 10px;
+    justify-content: center;
     margin-top: 50px;
   }
   
@@ -361,6 +409,7 @@ nav ul li a:hover,
     border-style: solid;
     opacity: 1;
     border-radius: 10px;
+    display: fixed;
   }
 .about::before {
     content: "";
@@ -497,4 +546,15 @@ nav ul li a:hover,
   100% {
     background-position: 0% 50%;
   }
+}
+@media only screen and (max-width: 514px) {
+    body:before {
+        content: "If you can turn your device horizontally for a better experience.";
+        display: block;
+        font-size: 14px;
+        padding: 5px;
+        background-color: #f44336;
+        color: #fff;
+        text-align: center;
+    }
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Welcome to Harry's Portfolio</title>
     <link rel="icon" type="image/png" href="img/20230716_110559_1.png">
     <link rel="stylesheet" href="styles.css">
@@ -22,7 +22,7 @@
     </nav>
 
 <main>
-  <section class="hidden">
+<section class="hidden container responsive">
     <span class="box1-text">Hello I am <span class="underline">Harry</span>.</span>
     <span class="box2-text" data-text="A professional frontend developer">A <span class="underline">polished</span> frontend developer.</span>
     <span class="box2-text" data-text="A competent python Scripter">A <span class="underline">competent</span> python scripter.</span>
@@ -30,14 +30,14 @@
     <span class="box2-text" data-text="A security-focused developer">A <span class="underline">security-focused</span> developer.</span>
     <span class="box2-text" data-text="A intermediate back-end developer">A <span class="underline">intermediate</span> back-end developer.</span>
     <span class="box2-text" data-text="A amature react developer">A <span class="underline">amature</span> react developer.</span>
-  </section>
+</section>
 
-        <section id="projects" class="hidden box3">
+        <section id="projects" class="hidden box3 container responsive">
             <div class="box3b">
                 <h3><u>Projects:</u></h3>
             </div>
         </section>
-        <section id="projects" class="hidden box3 about-container">
+        <section id="projects" class="hidden box3 proj-container container responsive">
             <div class="project-box" onclick="redirectToGitHub2()" style="border-radius: 25px;">
                 <div class="projrole">
                     <h2>Lead developer</h2>
@@ -69,7 +69,7 @@
                 </div>
             </div>
             </div>
-            <div class="project-box" onclick="redirectToGitHub()">
+            <div class="project-box container responsive" onclick="redirectToGitHub()">
                 <div class="projrole">
                     <h2>Lead developer</h2>
                 </div>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="project-box" onclick="redirectToGitHub4()" style="border-radius: 25px;">
+                <div class="project-box container responsive" onclick="redirectToGitHub4()" style="border-radius: 25px;">
                     <div class="projrole">
                         <h2>Lead designer</h2>
                     </div>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="project-box" onclick="redirectToGitHub3()" style="border-radius: 25px;">
+                <div class="project-box container responsive" onclick="redirectToGitHub3()" style="border-radius: 25px;">
                     <div class="projrole">
                         <h2>Lead developer</h2>
                     </div>
@@ -167,7 +167,7 @@
                 <h1><u>About me</u></h1>
             </div>
         </section>
-        <section class="hidden about-container" id="about">
+        <section class="hidden about-container container responsive" id="about">
             <div class="about">
                 <div class="aboutcode">
                     <h3>Web Development</h3>
