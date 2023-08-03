@@ -1,13 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 
 body {
-    margin: 0 auto;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: monospace;
     background-color: black;
     scroll-behavior: smooth;
     max-width: 100%;
 }
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    header {
+        padding: 15px 0;
+        font-size: 16px;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .project-box,
+    .about {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-container {
+        justify-content: center;
+    }
+
+    .aboutdev,
+    .aboutcode,
+    .abouttext {
+        width: 100%;
+    }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
 
 section{
     display: grid;
@@ -497,4 +528,5 @@ nav ul li a:hover,
   100% {
     background-position: 0% 50%;
   }
+}
 }
