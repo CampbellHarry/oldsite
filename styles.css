@@ -20,6 +20,28 @@ body {
         margin: 0 15px;
     }
 
+    .project-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: black;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    header {
+        padding: 15px 0;
+        font-size: 16px;
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Adjust the margin as needed */
+    }
+
     .project-box,
     .about {
         width: 100%;
@@ -35,10 +57,31 @@ body {
     .abouttext {
         width: 100%;
     }
+
+    /* Additional Mobile Styles */
+    .project-box {
+        font-size: 18px; /* Adjust the font size as needed */
+    }
+
+    .projname,
+    .projused,
+    .projrole,
+    .projdays,
+    .projdays1,
+    .projdays2 {
+        font-size: 16px; /* Adjust the font size as needed */
+    }
+
+    .abouttext {
+        font-size: 18px; /* Adjust the font size as needed */
+    }
 }
 
 /* Desktop Styles */
 @media screen and (min-width: 768px) {
+
+    /* Your existing desktop styles remain unchanged */
+
 
 section{
     display: grid;
