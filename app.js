@@ -20,12 +20,6 @@ textElements2[currentIndex2].style.display = 'inline';
 // Call the showNextText function every 3 seconds (2000 milliseconds)
 setInterval(showNextText, 3000);
 
-  
-  
-
-
-
-
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
 function ctrlShiftKey(e, keyCode) {
@@ -43,6 +37,12 @@ ctrlShiftKey(e, 'C') ||
 )
 return false;
 };
+  
+
+
+
+
+
 
 const observer = new IntersectionObserver((entries) => {
 entries.forEach((entry) => {
