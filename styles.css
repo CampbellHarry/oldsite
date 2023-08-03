@@ -10,139 +10,6 @@ body {
     max-width: 100%;
 }
 
-/* Common Styles for Mobile and Desktop */
-header {
-    text-align: center;
-    padding: 25px 0;
-    background-color: #333333;
-    color: white;
-    background-image: linear-gradient(45deg, #00aeff, #a200ff);
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #000000;
-}
-
-nav ul {
-    list-style: none;
-    margin: 10px 0;
-    padding: 0;
-    display: block;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 30px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.6s ease;
-}
-
-nav ul li a:hover {
-    background-color: #333333;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background-image: linear-gradient(to center, #23B5D3, black);
-    padding: 20px 0;
-    text-align: center;
-    bottom: 0%;
-    border-width: 5px;
-    border-color: white;
-    border-style: solid;
-    border-image: linear-gradient(45deg, #00aeff, #a200ff) 1;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0%;
-}
-
-.social-links a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-    margin: 10px;
-    bottom: 0%;
-}
-
-.social-links a:hover {
-    color: #40F99B;
-}
-
-/* Color Palette */
-:root {
-    --red-color: #00aeff;
-    --green-color: #00aeff;
-    --blue-color: #a200ff;
-}
-
-/* Mobile Styles */
-@media screen and (max-width: 767px) {
-    .project-box,
-    .about {
-        width: 100%;
-        height: auto;
-    }
-
-    .about-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        border-radius: 10px;
-        margin-top: 50px;
-    }
-
-    .about,
-    .project-box {
-        font-size: 18px;
-    }
-
-    .aboutcode,
-    .aboutdev,
-    .abouttext,
-    .projname,
-    .projused,
-    .projrole,
-    .projdays,
-    .projdays1,
-    .projdays2 {
-        font-size: 16px;
-    }
-
-    header {
-        padding: 15px 0;
-        font-size: 16px;
-    }
-
-    nav ul li {
-        margin: 0 10px;
-    }
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: monospace;
-    background-color: black;
-    scroll-behavior: smooth;
-    max-width: 100%;
-}
-
 /* Mobile Styles */
 @media screen and (max-width: 767px) {
     header {
@@ -161,362 +28,6 @@ body {
     }
 
     .about-container {
-        justify-content: center;
-    }
-
-    .aboutdev,
-    .aboutcode,
-    .abouttext {
-        width: 100%;
-    }
-
-    /* Additional Mobile Styles */
-    .project-box {
-        font-size: 18px; /* Adjust the font size as needed */
-    }
-
-    .projname,
-    .projused,
-    .projrole,
-    .projdays,
-    .projdays1,
-    .projdays2 {
-        font-size: 16px; /* Adjust the font size as needed */
-    }
-
-    .abouttext {
-        font-size: 18px; /* Adjust the font size as needed */
-    }
-}
-
-/* Desktop Styles */
-@media screen and (min-width: 768px) {
-    /* Your existing desktop styles remain unchanged */
-    section {
-        display: grid;
-        place-items: center;
-        align-items: center;
-        min-height: 50vh;
-        font-size: xx-large;
-    }
-
-    header {
-        text-align: center;
-        padding: 25px 0;
-        background-color: #333333;
-        color: b;
-        background-image: linear-gradient(45deg, #00aeff, #a200ff);
-    }
-
-    nav {
-        display: flex;
-        justify-content: center;
-        background-color: #000000;
-    }
-
-    nav ul {
-        list-style: none;
-        margin: 10px 0;
-        padding: 0;
-        display: block;
-    }
-
-    nav ul li {
-        display: inline-block;
-        margin: 0 30px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 18px;
-        padding: 10px 20px;
-        border-radius: 5px;
-        transition: background-color 0.6s ease;
-    }
-
-    nav ul li a:hover {
-        background-color: #333333;
-    }
-
-    main {
-        padding: 20px;
-    }
-
-    .box1-text,
-    .box2-text {
-        font-size: 50px; /* Adjust the font size as per your design */
-        font-weight: bold;
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-    }
-
-    .box1-text::after {
-        content: attr(data-text);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: linear-gradient(45deg, #00aeff, #a200ff);
-        opacity: 1;
-        animation: move 1s forwards;
-    }
-
-    @keyframes move {
-        from {
-            transform: translateY(100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-
-    .box3 {
-        text-align: center;
-        background-color: #000000;
-        margin: 0;
-        padding: 0;
-        border-radius: 25px;
-    }
-    .box3b {
-        text-align: center;
-        background-image: linear-gradient(to left, #23B5D3);
-        margin: 0;
-        padding: 0;
-        border-radius: 25px;
-        height: 50px;
-        width: 400px;
-        font-size: xx-large;
-        font-size: 40px;
-        color: white;
-    }
-    .box3c {
-        color: white;
-    }
-
-    .project-box {
-        width: 400px;
-        height: 400px;
-        border-radius: 5px;
-        margin: 20px 0;
-        padding: 20px;
-        position: relative; /* Add this line to make sure absolute positioning works correctly */
-        background-color: transparent;
-        font-size: 24px;
-        color: #ffffff;
-        transition: transform 0.3s ease;
-        cursor: pointer;
-        border-width: 10px;
-        border-image: linear-gradient(45deg, #00aeff, #a200ff) 1;
-        box-shadow: h-offset v-offset blur spread color;
-        border-style: solid;
-        opacity: 0.8;
-    }
-    .project-box::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(45deg, #00aeff, #a200ff);
-        opacity: 0.7;
-        z-index: -1;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .project-box1 {
-        width: 400px;
-        height: 110px;
-        margin: 20px 0;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        background-color: white;
-        font-size: 24px;
-        color: #ffffff;
-        transition: transform 0.3s ease;
-    }
-    .photoproj {
-        width: 350px;
-        height: 200px;
-        border-radius: 5px;
-        margin: 0; /* Remove the top margin */
-        padding: 2px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        font-size: 24px;
-        color: #ffffff;
-        transition: transform 0.3s ease;
-        position: absolute; /* Add this line to position the .photoproj absolutely */
-        top: 10px;
-        left: 4.5%;
-        border-width: 1px;
-        border-style: solid;
-        border-color: rgb(0, 225, 255);
-        border-radius: 25px;
-    }
-
-    .projname {
-        width: 350px;
-        height: 50px;
-        border-radius: 5px;
-        margin: 0; /* Remove the top margin */
-        padding: 2px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        font-size: 24px;
-        color: white;
-        transition: transform 0.3s ease;
-        position: absolute; /* Add this line to position the .photoproj absolutely */
-        top: 200px;
-        left: -.2%;
-        border-width: 2px;
-        border-style: solid;
-        border-color: rgb(0, 225, 255);
-    }
-    .projused {
-        width: 350px;
-        height: 50px;
-        border-radius: 5px;
-        margin: 0; /* Remove the top margin */
-        padding: 9px 0;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        background-color: transparent;
-        font-size: 34px;
-        color: white;
-        transition: transform 0.3s ease;
-        position: absolute; /* Add this line to position the .photoproj absolutely */
-        top: 300px;
-        left: 4.5%;
-        border-width: 2px;
-        border-style: solid;
-        border-color: rgb(0, 225, 255);
-        font-size: xx-large;
-        text-indent: 50px;
-    }
-
-    .projrole {
-        width: 126px;
-        height: 25px;
-        border-radius: 5px;
-        margin: 0; /* Remove the top margin */
-        padding: 9px 2px;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        background-color: transparent;
-        font-size: 8px;
-        color: white;
-        transition: transform 0.3s ease;
-        position: absolute; /* Add this line to position the .photoproj absolutely */
-        top: 277px;
-        left: 6%;
-        border-width: 2px;
-        border-style: solid;
-        border-color: rgb(0, 225, 255);
-        font-size: x-small;
-    }
-    .projdays2,
-    .projdays1,
-    .projdays {
-        width: 126px;
-        height: 25px;
-        border-radius: 5px;
-        margin: 0; /* Remove the top margin */
-        padding: 9px 2px;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        background-color: transparent;
-        font-size: 10px;
-        color: white;
-        transition: transform 0.3s ease;
-        position: absolute; /* Add this line to position the .photoproj absolutely */
-        top: 277px;
-        left: 63.5%;
-        border-width: 2px;
-        border-style: solid;
-        border-color: rgb(0, 225, 255);
-        font-size: x-small;
-    }
-
-    .project-box a {
-        text-decoration: none;
-        color: #ffffff;
-    }
-
-    .project-box:hover {
-        transform: scale(1.1);
-    }
-
-    footer {
-        background-image: linear-gradient(to center, #23B5D3, black);
-        padding: 20px 0;
-        text-align: center;
-        bottom: 0%;
-        border-width: 5px;
-        border-color: white;
-        border-style: solid;
-        border-image: linear-gradient(45deg, #00aeff, #a200ff) 1;
-    }
-
-    .social-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        bottom: 0%;
-    }
-
-    .social-links a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 20px;
-        margin: 10px;
-        bottom: 0%;
-    }
-
-    .social-links a:hover {
-        color: #40F99B;
-    }
-
-    /* Color Palette */
-    :root {
-        --red-color: #00aeff;
-        --green-color: #00aeff;
-        --blue-color: #a200ff;
-    }
-
-    body {
-        background-color: black;
-    }
-
-    header {
-        background-image: linear-gradient(45deg, #00aeff, #a200ff);
-        color: white;
-    }
-    nav ul li a:hover,
-    .project-box {
-        background-image: linear-gradient(to right, var(--green-color), var(--blue-color));
-    }
-    /* Additional styles for specific elements */
-
-    .hidden {
-        opacity: 0;
-        transition: 5s;
-    }
-    .show {
-        opacity: 1;
-        transition: 5s;
-    }
-    .about-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -525,10 +36,9 @@ body {
     }
 
     .about {
-        width: 400px;
-        height: 400px;
-        border-radius: 5px;
-        margin: 20px;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
         padding: 20px;
         position: relative;
         background-image: linear-gradient(45deg, #00aeff, #a200ff);
@@ -543,6 +53,7 @@ body {
         opacity: 1;
         border-radius: 10px;
     }
+
     .about::before {
         content: "";
         position: absolute;
@@ -558,10 +69,9 @@ body {
     }
 
     .aboutcode {
-        width: 350px;
-        height: 50px;
-        border-radius: 5px;
-        margin: 0; /* Remove the top margin */
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
         padding: 9px 0;
         display: flex;
         justify-content: left;
@@ -570,20 +80,17 @@ body {
         font-size: 34px;
         color: white;
         transition: transform 0.3s ease;
-        position: absolute; /* Add this line to position the .photoproj absolutely */
-        top: 10px;
-        left: 4.5%;
         border-style: solid;
         border-color: #000000;
         font-size: xx-large;
         text-indent: 5px;
         border-width: 3px;
     }
+
     .aboutdev {
-        width: 100px;
-        height: 50px;
-        border-radius: 5px;
-        margin: 0; /* Remove the top margin */
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
         padding: 9px 0;
         display: flex;
         justify-content: left;
@@ -592,9 +99,6 @@ body {
         font-size: 34px;
         color: white;
         transition: transform 0.3s ease;
-        position: absolute; /* Add this line to position the .photoproj absolutely */
-        top: 58px;
-        left: 4.5%;
         border-width: 2px;
         border-style: solid;
         border-color: black;
@@ -603,10 +107,9 @@ body {
     }
 
     .abouttext {
-        width: 350px;
-        height: 250px;
-        border-radius: 5px;
-        margin: 0; /* Remove the top margin */
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
         padding: 9px 2px;
         display: flex;
         justify-content: left;
@@ -615,9 +118,6 @@ body {
         font-size: 25px;
         color: white;
         transition: transform 0.3s ease;
-        position: absolute; /* Add this line to position the .photoproj absolutely */
-        top: 125px;
-        left: 4.5%;
         border-width: 2px;
         border-style: solid;
         border-color: black;
@@ -641,14 +141,230 @@ body {
         border-radius: 10px;
     }
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    .project-box {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 20px 0;
+        padding: 20px;
+        position: relative;
+        font-size: 24px;
+        color: #ffffff;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        border-width: 10px;
+        border-image: linear-gradient(45deg, #00aeff, #a200ff) 1;
+        box-shadow: h-offset v-offset blur spread color;
+        border-style: solid;
+        opacity: 0.8;
     }
 
-    .underline {
-        border-bottom: 5px solid #279AF1/* Adjust color and thickness as needed */;
+    .project-box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #00aeff, #a200ff);
+        opacity: 0.7;
+        z-index: -1;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+    }
+
+    .project-box1 {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        font-size: 24px;
+        color: #ffffff;
+        transition: transform 0.3s ease;
+    }
+
+    .photoproj {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 0;
+        padding: 2px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        font-size: 24px;
+        color: #ffffff;
+        transition: transform 0.3s ease;
+        position: absolute;
+        top: 10px;
+        left: 4.5%;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(0, 225, 255);
+        border-radius: 25px;
+    }
+
+    .projname {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 0;
+        padding: 2px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        font-size: 24px;
+        color: white;
+        transition: transform 0.3s ease;
+        position: absolute;
+        top: 200px;
+        left: -.2%;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(0, 225, 255);
+    }
+
+    .projused {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 0;
+        padding: 9px 0;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background-color: transparent;
+        font-size: 34px;
+        color: white;
+        transition: transform 0.3s ease;
+        position: absolute;
+        top: 300px;
+        left: 4.5%;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(0, 225, 255);
+        font-size: xx-large;
+        text-indent: 50px;
+    }
+
+    .projrole {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 0;
+        padding: 9px 2px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background-color: transparent;
+        font-size: 8px;
+        color: white;
+        transition: transform 0.3s ease;
+        position: absolute;
+        top: 277px;
+        left: 6%;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(0, 225, 255);
+        font-size: x-small;
+    }
+
+    .projdays2,
+    .projdays1,
+    .projdays {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 0;
+        padding: 9px 2px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background-color: transparent;
+        font-size: 10px;
+        color: white;
+        transition: transform 0.3s ease;
+        position: absolute;
+        top: 277px;
+        left: 63.5%;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(0, 225, 255);
+        font-size: x-small;
+    }
+
+    .project-box a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .project-box:hover {
+        transform: scale(1.1);
+    }
+
+    footer {
+        background-image: linear-gradient(to center, #23B5D3, black);
+        padding: 20px 0;
+        text-align: center;
+        border-width: 5px;
+        border-color: white;
+        border-style: solid;
+        border-image: linear-gradient(45deg, #00aeff, #a200ff) 1;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-links a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .social-links a:hover {
+        color: #40F99B;
+    }
+
+    /* Color Palette */
+    :root {
+        --red-color: #00aeff;
+        --green-color: #00aeff;
+        --blue-color: #a200ff;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    header {
+        background-image: linear-gradient(45deg, #00aeff, #a200ff);
+        color: white;
+    }
+
+    nav ul li a:hover,
+    .project-box {
+        background-image: linear-gradient(to right, var(--green-color), var(--blue-color));
+    }
+
+    /* Additional styles for specific elements */
+
+    .hidden {
+        opacity: 0;
+        transition: 5s;
+    }
+
+    .show {
+        opacity: 1;
+        transition: 5s;
     }
 
     .box1-text {
