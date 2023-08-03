@@ -1,4 +1,138 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: black;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+/* Common Styles for Mobile and Desktop */
+header {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #333333;
+    color: white;
+    background-image: linear-gradient(45deg, #00aeff, #a200ff);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    display: block;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.6s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333333;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-image: linear-gradient(to center, #23B5D3, black);
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0%;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+    border-image: linear-gradient(45deg, #00aeff, #a200ff) 1;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0%;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 10px;
+    bottom: 0%;
+}
+
+.social-links a:hover {
+    color: #40F99B;
+}
+
+/* Color Palette */
+:root {
+    --red-color: #00aeff;
+    --green-color: #00aeff;
+    --blue-color: #a200ff;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    .project-box,
+    .about {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+
+    .about,
+    .project-box {
+        font-size: 18px;
+    }
+
+    .aboutcode,
+    .aboutdev,
+    .abouttext,
+    .projname,
+    .projused,
+    .projrole,
+    .projdays,
+    .projdays1,
+    .projdays2 {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 15px 0;
+        font-size: 16px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
 
 body {
     margin: 0;
