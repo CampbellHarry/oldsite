@@ -20,6 +20,12 @@ textElements2[currentIndex2].style.display = 'inline';
 // Call the showNextText function every 3 seconds (2000 milliseconds)
 setInterval(showNextText, 3000);
 
+  
+  
+
+
+
+
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
 function ctrlShiftKey(e, keyCode) {
@@ -81,3 +87,66 @@ function redirectToGitHub() {
 function redirectToGitHub2() {
     window.open("https://github.com/IT-Sav/ticket", "_blank");
 }
+
+function redirectToGitHub3() {
+    window.open("https://github.com/IT-Sav/react", "_blank");
+}
+
+function redirectToGitHub4() {
+    window.open("https://github.com/IT-Sav/icons", "_blank");
+}
+
+var date1 = new Date('7/12/2023');
+var date2 = new Date();
+var difference = date2.getTime() - date1.getTime();
+var days = Math.ceil(difference / (1000 * 3600 * 24));
+
+// Find the <h2> element inside the <div class="projdays">
+var h2Element = document.querySelector('.projdays h2');
+
+// Update the content of the <h2> element with the calculated number of days
+h2Element.textContent = days + ' days ago';
+
+var date1 = new Date('7/12/2023');
+var date2 = new Date();
+var difference = date2.getTime() - date1.getTime();
+var days = Math.ceil(difference / (1000 * 3600 * 24));
+
+// Find the <h2> element inside the <div class="projdays">
+var h2Element = document.querySelector('.projdays h2');
+
+// Update the content of the <h2> element with the calculated number of days
+h2Element.textContent = days + ' days ago';
+
+var date3 = new Date('6/24/2023');
+var date2 = new Date();
+var difference = date2.getTime() - date3.getTime();
+var days = Math.ceil(difference / (1000 * 3600 * 24));
+
+// Find the <h2> element inside the <div class="projdays">
+var h2Element = document.querySelector('.projdays1 h2');
+
+// Update the content of the <h2> element with the calculated number of days
+h2Element.textContent = days + ' days ago';
+
+var date4 = new Date('8/2/2023');
+var date2 = new Date();
+var difference = date2.getTime() - date4.getTime();
+var days = Math.ceil(difference / (1000 * 3600 * 24));
+
+// Find the <h2> element inside the <div class="projdays">
+var h2Element = document.querySelector('.projdays2 h2');
+
+// Update the content of the <h2> element with the calculated number of days
+h2Element.textContent = days + ' days ago';
+
+var date5 = new Date('8/2/2023');
+var date2 = new Date();
+var difference = date2.getTime() - date4.getTime();
+var days = Math.ceil(difference / (1000 * 3600 * 24));
+
+// Find the <h2> element inside the <div class="projdays">
+var h2Element = document.querySelector('.projdays3 h2');
+
+// Update the content of the <h2> element with the calculated number of days
+h2Element.textContent = days + ' days ago';
