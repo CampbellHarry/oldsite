@@ -159,7 +159,7 @@ function updateWelcomeText() {
     if (hr < 12) {
         document.getElementById("welcomeText").textContent = `Good morning, Welcome to my portfolio!`;
     } else if (hr < 18) {
-        document.getElementById("welcomeText").textContent = `Good afternoon, Welcome to my portfolio!!`;
+        document.getElementById("welcomeText").textContent = `Good afternoon, Welcome to my portfolio!`;
     } else {
         document.getElementById("welcomeText").textContent = `Good evening, Welcome to my portfolio!!`;
     }
