@@ -154,16 +154,40 @@ h2Element.textContent = days + ' days ago';
 
 const date = new Date();
 const hr = date.getHours();
+let currentLanguage = "en"; // Default language is English
+
+// Translations for different languages
+const translations = {
+    en: {
+        morning: "Good morning, Welcome to my portfolio!",
+        afternoon: "Good afternoon, Welcome to my portfolio!",
+        evening: "Good evening, Welcome to my portfolio!"
+    },
+    es: {
+        morning: "¡Buenos días, Bienvenido a mi portafolio!",
+        afternoon: "Buenas tardes, Bienvenido a mi portafolio!",
+        evening: "Buena noche, Bienvenido a mi portafolio!"
+    },
+    // Add more languages and translations as needed
+};
 
 function updateWelcomeText() {
+    const welcomeTextElement = document.getElementById("welcomeText");
+    
     if (hr < 12) {
-        document.getElementById("welcomeText").textContent = `Good morning, Welcome to my portfolio!`;
+        welcomeTextElement.textContent = translations[currentLanguage].morning;
     } else if (hr < 18) {
-        document.getElementById("welcomeText").textContent = `Good afternoon, Welcome to my portfolio!`;
+        welcomeTextElement.textContent = translations[currentLanguage].afternoon;
     } else {
-        document.getElementById("welcomeText").textContent = `Good evening, Welcome to my portfolio!!`;
+        welcomeTextElement.textContent = translations[currentLanguage].evening;
     }
 }
 
 // Call the function to update the welcome text when the page loads
 window.onload = updateWelcomeText;
+
+// Example of changing language
+function changeLanguage(language) {
+    currentLanguage = language;
+    updateWelcomeText();
+}
