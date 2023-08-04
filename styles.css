@@ -268,13 +268,13 @@ main {
 }
 
 .projrole{
-    width: 126px;
+    width: 150px;
     height: 25px;
     border-radius: 5px;
     margin: 0; /* Remove the top margin */
     padding: 9px 2px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     background-color: transparent;
     font-size: 8px;
@@ -448,14 +448,14 @@ nav ul li a:hover,
     border-width: 3px;
 }
 .aboutdev{
-    width: 200px;
+    width: 250px;
     height: 50px;
     border-radius: 5px;
     margin: 0; /* Remove the top margin */
     padding: 9px 0;
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: left;
     background-color: transparent;
     font-size: 34px;
     color: white;
@@ -468,6 +468,7 @@ nav ul li a:hover,
     border-color: black;
     font-size: xx-large;
     text-indent: 5px;
+    text-align: center;
 }
 
 .abouttext{
