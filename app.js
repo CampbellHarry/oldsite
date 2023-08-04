@@ -79,21 +79,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // For the github clicker bank
 function redirectToGitHub() {
-    window.open("https://github.com/IT-Sav/Banking1", "_blank");
+    window.open("https://github.com/CampbellHarry/Banking1", "_blank");
 }
 
 // for github clicker ticket
 
 function redirectToGitHub2() {
-    window.open("https://github.com/IT-Sav/ticket", "_blank");
+    window.open("https://github.com/CampbellHarry/ticket", "_blank");
 }
 
 function redirectToGitHub3() {
-    window.open("https://github.com/IT-Sav/react", "_blank");
+    window.open("https://github.com/CampbellHarry/react", "_blank");
 }
 
 function redirectToGitHub4() {
-    window.open("https://github.com/IT-Sav/icons", "_blank");
+    window.open("https://github.com/CampbellHarry/icons", "_blank");
 }
 
 var date1 = new Date('7/12/2023');
