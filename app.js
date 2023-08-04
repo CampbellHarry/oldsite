@@ -155,7 +155,6 @@ h2Element.textContent = days + ' days ago';
 const date = new Date();
 const hr = date.getHours();
 
-// Function to update the welcomeText element with the user's name
 function updateWelcomeText() {
     if (hr < 12) {
         document.getElementById("welcomeText").textContent = `Good morning, Welcome to my portfolio!`;
@@ -165,3 +164,6 @@ function updateWelcomeText() {
         document.getElementById("welcomeText").textContent = `Good evening, Welcome to my portfolio!!`;
     }
 }
+
+// Call the function to update the welcome text when the page loads
+window.onload = updateWelcomeText;
