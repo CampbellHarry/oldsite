@@ -129,7 +129,7 @@ var h2Element = document.querySelector('.projdays1 h2');
 // Update the content of the <h2> element with the calculated number of days
 h2Element.textContent = days + ' days ago';
 
-var date4 = new Date('8/2/2023');
+var date4 = new Date('8/4/2023');
 var date2 = new Date();
 var difference = date2.getTime() - date4.getTime();
 var days = Math.ceil(difference / (1000 * 3600 * 24));
