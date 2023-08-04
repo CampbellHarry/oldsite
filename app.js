@@ -150,3 +150,18 @@ var h2Element = document.querySelector('.projdays3 h2');
 
 // Update the content of the <h2> element with the calculated number of days
 h2Element.textContent = days + ' days ago';
+
+
+const date = new Date();
+const hr = date.getHours();
+
+// Function to update the welcomeText element with the user's name
+function updateWelcomeText() {
+    if (hr < 12) {
+        document.getElementById("welcomeText").textContent = `Good morning, Welcome to my portfolio!`;
+    } else if (hr < 18) {
+        document.getElementById("welcomeText").textContent = `Good afternoon, Welcome to my portfolio!!`;
+    } else {
+        document.getElementById("welcomeText").textContent = `Good evening, Welcome to my portfolio!!`;
+    }
+}
