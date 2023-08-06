@@ -89,7 +89,7 @@ function redirectToGitHub2() {
 }
 
 function redirectToGitHub3() {
-    window.open("https://github.com/CampbellHarry/react", "_blank");
+    window.open("https://github.com/CampbellHarry/Aegis", "_blank");
 }
 
 function redirectToGitHub4() {
