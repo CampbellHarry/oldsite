@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Harry's Portfolio</title>
     <link rel="icon" type="image/png" href="img/20230716_110559_1.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" />
-    <meta property="author_name" content="Harry Campbell">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200">
+    <meta name="author" content="Harry Campbell">
     <meta property="og:title" content="Harry Campbell">
     <meta property="og:description" content="Welcome to Harry Campbell's portfolio website!">
     <meta property="og:image" content="https://cdn.discordapp.com/attachments/1134859043224166420/1136831063403020348/image.png">
@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <h1 id="welcomeText"><u>Welcome to my portfolio!</u></h1>
+        <h1 id="welcomeText"><u>Welcome to My Portfolio!</u></h1>
     </header>
 
     <nav>
@@ -31,13 +31,13 @@
 
 <main>
 <section class="hidden container responsive">
-    <span class="box1-text">Hello I am <span class="underline">Harry</span>.</span>
-    <span class="box2-text" data-text="A professional frontend developer">A <span class="underline">polished</span> front-end developer.</span>
-    <span class="box2-text" data-text="A competent python developer">A <span class="underline">competent</span> python developer.</span>
-    <span class="box2-text" data-text="A proficient IT Specialist.">A <span class="underline">proficient</span> IT connoisseur.</span>
-    <span class="box2-text" data-text="A security-focused developer">A <span class="underline">security-focused</span> developer.</span>
-    <span class="box2-text" data-text="A intermediate back-end developer">A <span class="underline">intermediate</span> back-end developer.</span>
-    <span class="box2-text" data-text="A amateur react developer">A <span class="underline">amateur</span> react developer.</span>
+    <div class="box1-text">Hello, I am <span class="underline">Harry</span>.</div>
+    <div class="box2-text" data-text="A professional frontend developer">A <span class="underline">polished</span> front-end developer.</div>
+    <div class="box2-text" data-text="A competent python developer">A <span class="underline">competent</span> Python developer.</div>
+    <div class="box2-text" data-text="A proficient IT Specialist">A <span class="underline">proficient</span> IT connoisseur.</div>
+    <div class="box2-text" data-text="A security-focused developer">A <span class="underline">security-focused</span> developer.</div>
+    <div class="box2-text" data-text="An intermediate back-end developer">An <span class="underline">intermediate</span> back-end developer.</div>
+    <div class="box2-text" data-text="An amateur React developer">An <span class="underline">amateur</span> React developer.</div>
 </section>
 
         <section id="projects" class="hidden box3 container responsive">
@@ -48,131 +48,89 @@
         <section id="projects" class="hidden box3 proj-container container responsive">
             <div class="project-box" onclick="redirectToGitHub2()" style="border-radius: 25px;">
                 <div class="projrole">
-                    <h2>Lead developer</h2>
+                    <h2>Lead Developer</h2>
                 </div>
                 <div class="projdays">
                     <h2></h2>
                 </div>
                 <div class="projused">
-                    <span class="material-symbols-outlined">
-                        html
-                        </span>
-                        <span class="material-symbols-outlined">
-                            javascript
-                            </span>
-                            <span class="material-symbols-outlined">
-                                css
-                                </span>
-                                <span class="material-symbols-outlined">
-                                    database
-                                    </span>
+                    <span class="material-symbols-outlined">html</span>
+                    <span class="material-symbols-outlined">javascript</span>
+                    <span class="material-symbols-outlined">css</span>
+                    <span class="material-symbols-outlined">database</span>
                 </div>
                 <div class="photoproj">
                     <img src="img/ticket.png" alt="Github ticket code." style="height: 200px; width: 350px; border-radius: 15px;">
                     <div class="projname">
-                        <h2>IT Ticket site</h2>
-                        </div>
+                        <h2>IT Ticket Site</h2>
                     </div>
                 </div>
-                </div>
-            </div>
             </div>
             <div class="project-box container responsive" onclick="redirectToGitHub()">
                 <div class="projrole">
-                    <h2>Lead developer</h2>
+                    <h2>Lead Developer</h2>
                 </div>
                 <div class="projdays1">
                     <h2></h2>
                 </div>
                 <div class="projused">
-                    <span class="material-symbols-outlined">
-                        html
-                        </span>
-                        <span class="material-symbols-outlined">
-                            javascript
-                            </span>
-                            <span class="material-symbols-outlined">
-                                css
-                                </span>
-                                <span class="material-symbols-outlined">
-                                    database
-                                    </span>
-                    
+                    <span class="material-symbols-outlined">html</span>
+                    <span class="material-symbols-outlined">javascript</span>
+                    <span class="material-symbols-outlined">css</span>
+                    <span class="material-symbols-outlined">database</span>
                 </div>
                 <div class="photoproj">
                     <img src="img/Banking.png" alt="Github banking code." style="height: 200px; width: 350px; border-radius: 15px;">
                     <div class="projname">
-                        <h2>Banking website</h2>
-                        </div>
+                        <h2>Banking Website</h2>
                     </div>
                 </div>
+            </div>
+            <div class="project-box container responsive" onclick="redirectToGitHub4()" style="border-radius: 25px;">
+                <div class="projrole">
+                    <h2>Lead Designer</h2>
                 </div>
-                <div class="project-box container responsive" onclick="redirectToGitHub4()" style="border-radius: 25px;">
-                    <div class="projrole">
-                        <h2>Lead designer</h2>
-                    </div>
-                    <div class="projdays3">
-                        <h2></h2>
-                    </div>
-                    <div class="projused">
-                        <span class="material-symbols-outlined">
-                            draw_abstract
-                            </span>
-                            <span class="material-symbols-outlined">
-                                preview
-                                </span>
-                                <span class="material-symbols-outlined">
-                                    design_services
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        details
-                                        </span>
-                    </div>
-                    <div class="photoproj">
-                        <img src="img/icons.png" alt="Github icon design." style="height: 200px; width: 350px; border-radius: 15px;">
-                        <div class="projname">
-                            <h2>Icon design</h2>
-                            </div>
-                        </div>
-                    </div>
+                <div class="projdays3">
+                    <h2></h2>
+                </div>
+                <div class="projused">
+                    <span class="material-symbols-outlined">draw_abstract</span>
+                    <span class="material-symbols-outlined">preview</span>
+                    <span class="material-symbols-outlined">design_services</span>
+                    <span class="material-symbols-outlined">details</span>
+                </div>
+                <div class="photoproj">
+                    <img src="img/icons.png" alt="Github icon design." style="height: 200px; width: 350px; border-radius: 15px;">
+                    <div class="projname">
+                        <h2>Icon Design</h2>
                     </div>
                 </div>
+            </div>
+            <div class="project-box container responsive" onclick="redirectToGitHub3()" style="border-radius: 25px;">
+                <div class="projrole">
+                    <h2>Lead Developer</h2>
                 </div>
-                <div class="project-box container responsive" onclick="redirectToGitHub3()" style="border-radius: 25px;">
-                    <div class="projrole">
-                        <h2>Lead developer</h2>
-                    </div>
-                    <div class="projdays2">
-                        <h2></h2>
-                    </div>
-                    <div class="projused">
-                        <span class="material-symbols-outlined">
-                            html
-                            </span>
-                            <span class="material-symbols-outlined">
-                                javascript
-                                </span>
-                                <span class="material-symbols-outlined">
-                                    database
-                                    </span>
-                                    <a><img src="https://www.cdnlogo.com/logos/r/63/react.svg" style="height: 20px;width: 20px;-webkit-filter: whitescale(100%);filter: whitescale(100);"></a>
-                    </div>
-                    <div class="photoproj">
-                        <img src="img/react.png" alt="Github react code." style="height: 200px; width: 350px; border-radius: 15px;">
-                        <div class="projname">
-                            <h2 style="font-size: 25px;">Aegis Authentication</h2>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
+                <div class="projdays2">
+                    <h2></h2>
                 </div>
+                <div class="projused">
+                    <span class="material-symbols-outlined">html</span>
+                    <span class="material-symbols-outlined">javascript</span>
+                    <span class="material-symbols-outlined">database</span>
+                    <a><img src="https://www.cdnlogo.com/logos/r/63/react.svg" style="height: 20px;width: 20px;-webkit-filter: grayscale(100%);filter: grayscale(100%);"></a>
+                </div>
+                <div class="photoproj">
+                    <img src="img/react.png" alt="Github react code." style="height: 200px; width: 350px; border-radius: 15px;">
+                    <div class="projname">
+                        <h2 style="font-size: 25px;">Aegis Authentication</h2>
+                    </div>
                 </div>
             </div>
             <hr style="height:3px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
         </section>
         <section class="hidden">
             <div class="box3c">
-                <h1><u>About me</u></h1>
+                <h1><u>About Me</u></h1>
             </div>
         </section>
         <section class="hidden about-container container responsive" id="about">
@@ -181,18 +139,12 @@
                     <h3>Web Development</h3>
                 </div>
                 <div class="aboutdev">
-                    <span class="material-symbols-outlined">
-                        html
-                        </span>
-                        <span class="material-symbols-outlined">
-                            javascript
-                            </span>
-                            <span class="material-symbols-outlined">
-                                css
-                                </span>
+                    <span class="material-symbols-outlined">html</span>
+                    <span class="material-symbols-outlined">javascript</span>
+                    <span class="material-symbols-outlined">css</span>
                 </div>
                 <div class="abouttext">
-                <p>Front-end developer skilled in HTML, CSS, and expanding expertise in JavaScript for dynamic web applications. Committed to industry best practices and continuous learning.</p>
+                    <p>Front-end developer skilled in HTML, CSS, and expanding expertise in JavaScript for dynamic web applications. Committed to industry best practices and continuous learning.</p>
                 </div>
             </div>
             <div class="about about4">
@@ -200,18 +152,12 @@
                     <h3 style="font-size: 30px;">Customer Service</h3>
                 </div>
                 <div class="aboutdev">
-                    <span class="material-symbols-outlined">
-                        groups
-                        </span>
-                        <span class="material-symbols-outlined">
-                            computer
-                            </span>
-                            <span class="material-symbols-outlined">
-                                shield_person
-                                </span>
+                    <span class="material-symbols-outlined">groups</span>
+                    <span class="material-symbols-outlined">computer</span>
+                    <span class="material-symbols-outlined">shield_person</span>
                 </div>
                 <div class="abouttext">
-                <p style="font-size: 27px;">Proven track record of exceptional service, strong interpersonal skills, adept at handling inquiries and resolving issues efficiently.</p>
+                    <p style="font-size: 27px;">Proven track record of exceptional service, strong interpersonal skills, adept at handling inquiries and resolving issues efficiently.</p>
                 </div>
             </div>
             <div class="about about5">
@@ -219,18 +165,12 @@
                     <h3 style="font-size: 23px;">Information Technology</h3>
                 </div>
                 <div class="aboutdev">
-                    <span class="material-symbols-outlined">
-                        keyboard
-                        </span>
-                        <span class="material-symbols-outlined">
-                            engineering
-                            </span>
-                            <span class="material-symbols-outlined">
-                                troubleshoot
-                                </span>
+                    <span class="material-symbols-outlined">keyboard</span>
+                    <span class="material-symbols-outlined">engineering</span>
+                    <span class="material-symbols-outlined">troubleshoot</span>
                 </div>
                 <div class="abouttext">
-                <p style="font-size: 17px;">At just 16 years old, I've already gained 2 years of my own self experience in IT, where I've honed my skills in troubleshooting hardware and software, maintaining networks, and implementing efficient solutions. My passion for technology extends to Python scripting and web design. With an early start in the field, I'm eager to continue my journey.</p>
+                    <p style="font-size: 17px;">At just 16 years old, I've already gained 2 years of my own self-experience in IT, where I've honed my skills in troubleshooting hardware and software, maintaining networks, and implementing efficient solutions. My passion for technology extends to Python scripting and web design. With an early start in the field, I'm eager to continue my journey.</p>
                 </div>
             </div>
             <div class="about about7">
@@ -238,16 +178,12 @@
                     <h3 style="font-size: 23px;">React</h3>
                 </div>
                 <div class="aboutdev">
-                    <span class="material-symbols-outlined">
-                        html
-                        </span>
-                        <span class="material-symbols-outlined">
-                            javascript
-                            </span>
-                            <a><img src="https://www.cdnlogo.com/logos/r/63/react.svg" style="height: 20px;width: 20px;-webkit-filter: whitescale(100%);filter: whitescale(100);"></a>
+                    <span class="material-symbols-outlined">html</span>
+                    <span class="material-symbols-outlined">javascript</span>
+                    <a><img src="https://www.cdnlogo.com/logos/r/63/react.svg" style="height: 20px;width: 20px;-webkit-filter: grayscale(100%);filter: grayscale(100%);"></a>
                 </div>
                 <div class="abouttext">
-                <p style="font-size: 27px;">I have just recently started my journey in react in August 2023. I feel confident already in this framework.</p>
+                    <p style="font-size: 27px;">I have recently started my journey in React in August 2023. I already feel confident in this framework.</p>
                 </div>
             </div>
             <div class="about about6">
@@ -255,19 +191,12 @@
                     <h3>Backend</h3>
                 </div>
                 <div class="aboutdev">
-                    <span class="material-symbols-outlined">
-                        dns
-                        </span>
-                        <span class="material-symbols-outlined">
-                            tabs
-                            </span>
-                            <span class="material-symbols-outlined">
-                                database
-                                </span>
+                    <span class="material-symbols-outlined">dns</span>
+                    <span class="material-symbols-outlined">tabs</span>
+                    <span class="material-symbols-outlined">database</span>
                 </div>
                 <div class="abouttext">
-                <p>
-                    As an intermediate back-end scripter, I primarily code in Python to complete back-end tasks. While I am relatively new to this field, I take pride in developing all the back-end code for my projects independently.</p>
+                    <p>As an intermediate back-end developer, I primarily code in Python to complete back-end tasks. While I am relatively new to this field, I take pride in developing all the back-end code for my projects independently.</p>
                 </div>
             </div>
         </section>
@@ -280,6 +209,6 @@
         </div>
     </footer>
     
+    <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
 </html>
