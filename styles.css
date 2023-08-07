@@ -60,7 +60,7 @@ header {
     padding: 25px 0;
     background-color: #333333;
     color: b;
-    background-image: linear-gradient(45deg, #00aeff, #a200ff);
+    background-image: linear-gradient(45deg, gold, #a200ff);
 }
 
 nav {
@@ -111,7 +111,7 @@ main {
     content: attr(data-text);
     background-clip: text;
     -webkit-background-clip: text;
-    color: linear-gradient(45deg, #00aeff, #a200ff);
+    color: linear-gradient(45deg, gold, #a200ff);
     opacity: 1;
     animation: move 1s forwards;
 }
@@ -152,7 +152,7 @@ main {
 
 .proj-container {
     display: fixed;
-    flex-wrap: wrap;
+    flex-wrap: flex;
     justify-content: space-between;
     border-radius: 10px;
     justify-content: center;
@@ -172,7 +172,7 @@ main {
     transition: transform 0.3s ease;
     cursor: pointer;
     border-width: 10px;
-    border-image: linear-gradient(45deg, #00aeff, #a200ff) 1;
+    border-image: linear-gradient(45deg, gold, #a200ff) 1;
     box-shadow: h-offset v-offset blur spread color;
     border-style: solid;
     opacity: 0.8;
@@ -184,7 +184,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #00aeff, #a200ff);
+    background: linear-gradient(45deg, gold, #a200ff);
     opacity: 0.7;
     z-index: -1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -330,7 +330,7 @@ footer {
     border-width: 5px;
     border-color: white;
     border-style: solid;
-    border-image: linear-gradient(45deg, #00aeff, #a200ff) 1;
+    border-image: linear-gradient(45deg, gold, #a200ff) 1;
 }
 
 .social-links {
@@ -349,13 +349,13 @@ footer {
 }
 
 .social-links a:hover {
-    color: #40F99B;
+    color: gold;
 }
 
 /* Color Palette */
 :root {
-    --red-color: #00aeff;
-    --green-color: #00aeff;
+    --red-color: gold;
+    --green-color: gold;
     --blue-color: #a200ff;
 }
 
@@ -364,7 +364,7 @@ body {
 }
 
 header{
-    background-image: linear-gradient(45deg, #00aeff, #a200ff);
+    background-image: linear-gradient(45deg, gold, #a200ff);
     color: white;
 }
 nav ul li a:hover,
@@ -398,13 +398,13 @@ nav ul li a:hover,
     margin: 20px;
     padding: 20px;
     position: relative;
-    background-image: linear-gradient(45deg, #00aeff, #a200ff);
+    background-image: linear-gradient(45deg, gold, #a200ff);
     font-size: 24px;
     color: #ffffff;
     transition: transform 0.3s ease;
     cursor: crosshair;
     border-width: 10px;
-    border-image: linear-gradient(45deg, #00aeff, #a200ff) 1;
+    border-image: linear-gradient(45deg, gold, #a200ff) 1;
     box-shadow: h-offset v-offset blur spread color;
     border-style: solid;
     opacity: 1;
@@ -418,7 +418,7 @@ nav ul li a:hover,
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #00aeff, #a200ff);
+    background: linear-gradient(45deg, gold, #a200ff);
     opacity: 1.1;
     z-index: -1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -521,13 +521,13 @@ nav ul li a:hover,
   }
 
 .box1-text {
-  background-image: linear-gradient(45deg, #00aeff, #a200ff);
+  background-image: linear-gradient(45deg, gold, #a200ff);
   animation: moveGradient1 5s linear infinite;
 }
 
 .box2-text {
   display: none;
-  background-image: linear-gradient(45deg, #00aeff, #a200ff);
+  background-image: linear-gradient(45deg, gold, #a200ff);
   animation: moveGradient2 5s linear infinite;
 }
 
@@ -554,7 +554,7 @@ nav ul li a:hover,
         display: block;
         font-size: 14px;
         padding: 5px;
-        background-color: #f44336;
+        background-color: red;
         color: #fff;
         text-align: center;
     }
