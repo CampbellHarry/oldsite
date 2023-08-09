@@ -61,6 +61,7 @@ header {
     background-color: #333333;
     color: b;
     background-image: linear-gradient(45deg, gold, #a200ff);
+    align-items: center;
 }
 
 nav {
@@ -169,13 +170,16 @@ main {
     background-color: transparent;
     font-size: 24px;
     color: #ffffff;
-    transition: transform 0.3s ease;
     cursor: pointer;
-    border-width: 10px;
+    clip-path: inset(0px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+    border-width: 4px;
     border-image: linear-gradient(45deg, gold, #a200ff) 1;
     box-shadow: h-offset v-offset blur spread color;
     border-style: solid;
     opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
 }
 .project-box::before {
     content: "";
@@ -211,17 +215,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: transparent;
     font-size: 24px;
     color: #ffffff;
     transition: transform 0.3s ease;
     position: absolute; /* Add this line to position the .photoproj absolutely */
     top: 10px;
-    left: 4.5%;
+    left: 5%;
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(0, 225, 255);
-    border-radius: 25px;
+    border-color: transparent
 }
 
 .projname{
@@ -305,7 +308,7 @@ main {
     transition: transform 0.3s ease;
     position: absolute; /* Add this line to position the .photoproj absolutely */
     top: 277px;
-    left: 63.5%;
+    left: 61.3%;
     border-width: 2px;
     border-style: solid;
     border-color: rgb(0, 225, 255);
@@ -318,8 +321,26 @@ main {
     color: #ffffff;
 }
 
-.project-box:hover {
+.project-box:hover{
     transform: scale(1.1);
+}
+
+@keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px); /* Adjust the value to control the distance of upward movement */
+    }
 }
 
 footer {
@@ -531,21 +552,6 @@ nav ul li a:hover,
   animation: moveGradient2 5s linear infinite;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .darkslidecont{
-      width: 200px;
-      height: 50px;
-      position: relative;
-      background-color: transparent;
-      border-radius: 5px;
-      display: block;
-      flex-wrap: flex;
-      z-index: 5;
-  }
 
 
 
