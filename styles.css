@@ -531,6 +531,24 @@ nav ul li a:hover,
   animation: moveGradient2 5s linear infinite;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .darkslidecont{
+      width: 200px;
+      height: 50px;
+      position: relative;
+      background-color: transparent;
+      border-radius: 5px;
+      display: block;
+      flex-wrap: flex;
+      z-index: 5;
+  }
+
+
+
 @keyframes moveGradient1 {
   0% {
     background-position: 0% 50%;
