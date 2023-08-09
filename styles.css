@@ -115,6 +115,12 @@ main {
     color: linear-gradient(45deg, gold, #a200ff);
     opacity: 1;
     animation: move 1s forwards;
+    background-clip: text;
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+    border-image: linear-gradient(45deg, gold, #a200ff) 1;
+    border-width: 4px;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
 }
 
 @keyframes move {
@@ -542,7 +548,7 @@ nav ul li a:hover,
   }
 
   .underline {
-    border-bottom: 5px solid #279AF1/* Adjust color and thickness as needed */
+    border-bottom: 5px solid #a200ff;/* Adjust color and thickness as needed */
   }
 
 .box1-text {
@@ -586,4 +592,24 @@ nav ul li a:hover,
         color: #fff;
         text-align: center;
     }
+}
+
+.cvholder{
+    display: fixed;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+}
+.cv{
+    height: auto;
+    width: auto;
+    overflow: scroll;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    scrollbar-color: black;
 }
