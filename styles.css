@@ -171,7 +171,6 @@ main {
     font-size: 24px;
     color: #ffffff;
     cursor: pointer;
-    clip-path: inset(0px round 10px);
     animation: huerotate 6s infinite linear;
     filter: hue-rotate(360deg);
     border-width: 4px;
@@ -180,6 +179,7 @@ main {
     border-style: solid;
     opacity: 0.8;
     transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    clip-path: inset(6px round 5px);
 }
 .project-box::before {
     content: "";
@@ -221,10 +221,11 @@ main {
     transition: transform 0.3s ease;
     position: absolute; /* Add this line to position the .photoproj absolutely */
     top: 10px;
-    left: 5%;
+    left: 5.4%;
     border-width: 1px;
     border-style: solid;
-    border-color: transparent
+    border-color: transparent;
+    box-shadow: 50px 50px 100px blue inset(0px round 10px) hue-rotate(360deg);
 }
 
 .projname{
@@ -352,6 +353,9 @@ footer {
     border-color: white;
     border-style: solid;
     border-image: linear-gradient(45deg, gold, #a200ff) 1;
+    clip-path: inset(-6px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
 }
 
 .social-links {
