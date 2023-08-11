@@ -106,6 +106,9 @@ main {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    clip-path: inset(-6px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
 }
 
 .box1-text::after {
@@ -612,4 +615,13 @@ nav ul li a:hover,
     border-radius: 10px;
     padding: 10px;
     scrollbar-color: black;
+}
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./wave-haikei\ \(1\).svg);
+    z-index: 9;
 }
