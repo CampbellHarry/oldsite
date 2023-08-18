@@ -42,8 +42,8 @@ body {
     margin: 0 auto;
     padding: 0px;
     font-family: monospace;
-    background-color: black;
     scroll-behavior: smooth;
+    background-color: black;
     max-width: 100%;
 }
 
@@ -59,15 +59,14 @@ header {
     text-align: center;
     padding: 25px 0;
     background-color: #333333;
-    color: b;
     background-image: linear-gradient(45deg, gold, #a200ff);
     align-items: center;
+    z-index: 10000000000;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    background-color: #000000;
 }
 
 nav ul {
@@ -139,7 +138,6 @@ main {
 
 .box3 {
     text-align: center;
-    background-color: #000000;
     margin: 0;
     padding: 0;
     border-radius: 25px;
@@ -388,6 +386,9 @@ footer {
 .footer1 p:hover {
     color: gold;
 }
+.footer1 h4:hover {
+    color: gold;
+}
 
 .social-links {
     display: flex;
@@ -417,9 +418,7 @@ footer {
     --blue-color: #a200ff;
 }
 
-body {
-    background-color: black;
-}
+
 
 header{
     background-image: linear-gradient(45deg, gold, #a200ff);
@@ -500,7 +499,7 @@ nav ul li a:hover,
     top: 10px;
     left: 4.5%;
     border-style: solid;
-    border-color: #000000;
+    border-color: white;
     font-size: xx-large;
     text-indent: 5px;
     border-width: 3px;
@@ -523,7 +522,6 @@ nav ul li a:hover,
     left: 4.5%;
     border-width: 2px;
     border-style: solid;
-    border-color: black;
     font-size: xx-large;
     text-indent: 5px;
     text-align: center;
@@ -547,7 +545,6 @@ nav ul li a:hover,
     left: 4.5%;
     border-width: 2px;
     border-style: solid;
-    border-color: black;
     font-size: x-large;
     text-indent: 5px;
 }
@@ -648,4 +645,19 @@ nav ul li a:hover,
     background-size: cover;
     background-image: url(./wave-haikei\ \(1\).svg);
     z-index: 9;
+}
+.glower {
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+    box-shadow: 0 0 600px 250px purple;
+    background-color: transparent;
+}
+.glower1 {
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+    box-shadow: 5px 100px 400px 200px blue;
+    background-color: transparent;
+    z-index: -5;
 }
