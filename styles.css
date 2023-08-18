@@ -179,7 +179,6 @@ main {
     position: relative; /* Add this line to make sure absolute positioning works correctly */
     background-color: transparent;
     font-size: 24px;
-    color: #ffffff;
     cursor: pointer;
     animation: huerotate 6s infinite linear;
     filter: hue-rotate(360deg);
@@ -190,6 +189,7 @@ main {
     opacity: 0.8;
     transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
     clip-path: inset(6px round 5px);
+    color: rgb(218, 218, 218);
 }
 .project-box::before {
     content: "";
@@ -227,7 +227,6 @@ main {
     align-items: center;
     background-color: transparent;
     font-size: 24px;
-    color: #ffffff;
     transition: transform 0.3s ease;
     position: absolute; /* Add this line to position the .photoproj absolutely */
     top: 10px;
@@ -249,7 +248,6 @@ main {
     align-items: center;
     background-color: transparent;
     font-size: 24px;
-    color: white;
     transition: transform 0.3s ease;
     position: absolute; /* Add this line to position the .photoproj absolutely */
     top: 200px;
@@ -269,7 +267,6 @@ main {
     align-items: center;
     background-color: transparent;
     font-size: 34px;
-    color: white;
     transition: transform 0.3s ease;
     position: absolute; /* Add this line to position the .photoproj absolutely */
     top: 300px;
@@ -292,7 +289,6 @@ main {
     align-items: center;
     background-color: transparent;
     font-size: 8px;
-    color: white;
     transition: transform 0.3s ease;
     position: absolute; /* Add this line to position the .photoproj absolutely */
     top: 277px;
@@ -315,7 +311,6 @@ main {
     align-items: center;
     background-color: transparent;
     font-size: 10px;
-    color: white;
     transition: transform 0.3s ease;
     position: absolute; /* Add this line to position the .photoproj absolutely */
     top: 277px;
@@ -334,6 +329,7 @@ main {
 
 .project-box:hover{
     transform: scale(1.1);
+    color: white;
 }
 
 @keyframes huerotate {
@@ -356,17 +352,15 @@ main {
 
 footer {
     background-image: linear-gradient(to center, #23B5D3, black);
-    padding: 0px 0;
     text-align: center;
-    bottom: 0%;
-    border-width: 5px;
-    border-color: white;
-    border-style: solid;
-    border-image: linear-gradient(45deg, gold, #a200ff) 1;
+    border-top-width: 5px; /* Set only the top border width */
+    border-top-color: rgb(46, 46, 46); /* Set the color of the top border */
+    border-top-style: solid; /* Set the style of the top border */
     clip-path: inset(-6px round 10px);
     animation: huerotate 6s infinite linear;
     filter: hue-rotate(360deg);
 }
+
 .footer1{
     height: 100px;
     width: 400px;
@@ -377,16 +371,22 @@ footer {
     color: white;
     text-shadow: 5px 5px 100px white;
     min-height: 10px;
+    top: 1px;
 
 }
 .footer1 h4{
     text-shadow: 4px 2px 7px white;
     font-size: x-large;
     color: white;
+    z-index: 7;
 }
 .footer1 p{
     font-size: small;
     color: white;
+    z-index: 7;
+}
+.footer1 p:hover {
+    color: gold;
 }
 
 .social-links {
