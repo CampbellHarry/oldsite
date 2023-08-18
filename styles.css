@@ -367,6 +367,7 @@ footer {
     text-shadow: 5px 5px 100px white;
     min-height: 10px;
     top: 1px;
+    cursor: default;
 
 }
 .footer1 h4{
@@ -374,17 +375,21 @@ footer {
     font-size: x-large;
     color: white;
     z-index: 7;
+    cursor: pointer;
 }
 .footer1 p{
     font-size: small;
     color: white;
     z-index: 7;
+    cursor: default;
 }
 .footer1 p:hover {
     color: gold;
+    cursor: default;
 }
 .footer1 h4:hover {
     color: gold;
+    cursor: pointer;
 }
 
 .social-links {
