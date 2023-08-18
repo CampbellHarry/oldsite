@@ -382,9 +382,11 @@ footer {
 .footer1 h4{
     text-shadow: 4px 2px 7px white;
     font-size: x-large;
+    color: white;
 }
 .footer1 p{
     font-size: small;
+    color: white;
 }
 
 .social-links {
