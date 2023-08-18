@@ -32,9 +32,8 @@
 
 /* Additional mobile styles */
 @media only screen and (max-width: 514px) {
-    /* Add any specific mobile styles here */
     .project-box {
-        width: 90%; /* Adjust the width as needed */
+        width: 90%; 
     }
 }
 
@@ -100,7 +99,7 @@ main {
 
 .box1-text,
 .box2-text {
-    font-size: 50px; /* Adjust the font size as per your design */
+    font-size: 50px; 
     font-weight: bold;
     color: transparent;
     -webkit-background-clip: text;
@@ -174,7 +173,7 @@ main {
     border-radius: 5px;
     margin: 20px 0;
     padding: 20px;
-    position: relative; /* Add this line to make sure absolute positioning works correctly */
+    position: relative; 
     background-color: transparent;
     font-size: 24px;
     cursor: pointer;
@@ -218,7 +217,7 @@ main {
     width: 350px;
     height: 200px;
     border-radius: 5px;
-    margin: 0; /* Remove the top margin */
+    margin: 0; 
     padding: 2px 0;
     display: flex;
     justify-content: center;
@@ -226,7 +225,7 @@ main {
     background-color: transparent;
     font-size: 24px;
     transition: transform 0.3s ease;
-    position: absolute; /* Add this line to position the .photoproj absolutely */
+    position: absolute; 
     top: 10px;
     left: 5.4%;
     border-width: 1px;
@@ -239,7 +238,7 @@ main {
     width: 350px;
     height: 50px;
     border-radius: 5px;
-    margin: 0; /* Remove the top margin */
+    margin: 0; 
     padding: 2px 0;
     display: flex;
     justify-content: center;
@@ -247,7 +246,7 @@ main {
     background-color: transparent;
     font-size: 24px;
     transition: transform 0.3s ease;
-    position: absolute; /* Add this line to position the .photoproj absolutely */
+    position: absolute;
     top: 200px;
     left: -.2%;
     border-width: 2px;
@@ -258,7 +257,7 @@ main {
     width: 350px;
     height: 50px;
     border-radius: 5px;
-    margin: 0; /* Remove the top margin */
+    margin: 0; 
     padding: 9px 0;
     display: flex;
     justify-content: left;
@@ -266,7 +265,7 @@ main {
     background-color: transparent;
     font-size: 34px;
     transition: transform 0.3s ease;
-    position: absolute; /* Add this line to position the .photoproj absolutely */
+    position: absolute; 
     top: 300px;
     left: 4.5%;
     border-width: 2px;
@@ -280,7 +279,7 @@ main {
     width: 150px;
     height: 25px;
     border-radius: 5px;
-    margin: 0; /* Remove the top margin */
+    margin: 0; 
     padding: 9px 2px;
     display: flex;
     justify-content: center;
@@ -288,7 +287,7 @@ main {
     background-color: transparent;
     font-size: 8px;
     transition: transform 0.3s ease;
-    position: absolute; /* Add this line to position the .photoproj absolutely */
+    position: absolute; 
     top: 277px;
     left: 6%;
     border-width: 2px;
@@ -302,7 +301,7 @@ main {
     width: 126px;
     height: 25px;
     border-radius: 5px;
-    margin: 0; /* Remove the top margin */
+    margin: 0; 
     padding: 9px 2px;
     display: flex;
     justify-content: left;
@@ -310,7 +309,7 @@ main {
     background-color: transparent;
     font-size: 10px;
     transition: transform 0.3s ease;
-    position: absolute; /* Add this line to position the .photoproj absolutely */
+    position: absolute;
     top: 277px;
     left: 61.3%;
     border-width: 2px;
@@ -344,16 +343,16 @@ main {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-100px); /* Adjust the value to control the distance of upward movement */
+        transform: translateY(-100px); 
     }
 }
 
 footer {
     background-image: linear-gradient(to center, #23B5D3, black);
     text-align: center;
-    border-top-width: 5px; /* Set only the top border width */
-    border-top-color: rgb(46, 46, 46); /* Set the color of the top border */
-    border-top-style: solid; /* Set the style of the top border */
+    border-top-width: 5px; 
+    border-top-color: rgb(46, 46, 46); 
+    border-top-style: solid; 
     clip-path: inset(-6px round 10px);
     animation: huerotate 6s infinite linear;
     filter: hue-rotate(360deg);
@@ -428,7 +427,7 @@ nav ul li a:hover,
 .project-box {
     background-image: linear-gradient(to right, var(--green-color), var(--blue-color));
 }
-/* Additional styles for specific elements */
+
 
 .hidden{
     opacity: 0;
@@ -486,7 +485,7 @@ nav ul li a:hover,
     width: 350px;
     height: 50px;
     border-radius: 5px;
-    margin: 0; /* Remove the top margin */
+    margin: 0;
     padding: 9px 0;
     display: flex;
     justify-content: left;
@@ -508,7 +507,7 @@ nav ul li a:hover,
     width: 250px;
     height: 50px;
     border-radius: 5px;
-    margin: 0; /* Remove the top margin */
+    margin: 0; 
     padding: 9px 0;
     display: flex;
     justify-content: left;
@@ -517,7 +516,7 @@ nav ul li a:hover,
     font-size: 34px;
     color: white;
     transition: transform 0.3s ease;
-    position: absolute; /* Add this line to position the .photoproj absolutely */
+    position: absolute; 
     top: 58px;
     left: 4.5%;
     border-width: 2px;
@@ -531,7 +530,7 @@ nav ul li a:hover,
     width: 350px;
     height: 250px;
     border-radius: 5px;
-    margin: 0; /* Remove the top margin */
+    margin: 0; 
     padding: 9px 2px;
     display: flex;
     justify-content: left;
@@ -540,7 +539,7 @@ nav ul li a:hover,
     font-size: 25px;
     color: white;
     transition: transform 0.3s ease;
-    position: absolute; /* Add this line to position the .photoproj absolutely */
+    position: absolute; 
     top: 125px;
     left: 4.5%;
     border-width: 2px;
@@ -572,7 +571,7 @@ nav ul li a:hover,
   }
 
   .underline {
-    border-bottom: 5px solid #a200ff;/* Adjust color and thickness as needed */
+    border-bottom: 5px solid #a200ff;
   }
 
 .box1-text {
