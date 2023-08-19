@@ -378,6 +378,7 @@ footer {
     color: white;
     z-index: 7;
     cursor: pointer;
+    text-decoration: none;
 }
 .footer1 p{
     font-size: small;
