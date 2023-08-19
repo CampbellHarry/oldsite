@@ -1,3 +1,6 @@
+// Text change script starts
+
+
 const textElements1 = document.querySelectorAll('.box1-text');
 const textElements2 = document.querySelectorAll('.box2-text');
 let currentIndex1 = 0;
@@ -21,10 +24,10 @@ textElements2[currentIndex2].style.display = 'inline';
 setInterval(showNextText, 3000);
 
 
+// Text change script ends
 
 
-
-
+// scroll smother starts
 
 
 const observer = new IntersectionObserver((entries) => {
@@ -60,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 })
 
+// scroll smother ends
+
 // For the github clicker bank
 function redirectToGitHub() {
     window.open("https://github.com/CampbellHarry/Banking1", "_blank");
@@ -79,6 +84,8 @@ function redirectToGitHub4() {
     window.open("https://github.com/CampbellHarry/icons", "_blank");
 }
 
+// no peek starts
+
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
 function ctrlShiftKey(e, keyCode) {
@@ -96,6 +103,10 @@ ctrlShiftKey(e, 'C') ||
 )
 return false;
 };
+
+// no peek ends
+
+// date starts
 
 var date1 = new Date('7/12/2023');
 var date2 = new Date();
@@ -153,6 +164,8 @@ var h2Element = document.querySelector('.projdays3 h2');
 h2Element.textContent = days + ' days ago';
 
 
+// lang starts with top bar for days
+
 const date = new Date();
 const hr = date.getHours();
 let currentLanguage = "en"; // Default language is English
@@ -192,3 +205,4 @@ function changeLanguage(language) {
     currentLanguage = language;
     updateWelcomeText();
 }
+// date ends
