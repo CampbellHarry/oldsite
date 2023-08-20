@@ -206,3 +206,20 @@ function changeLanguage(language) {
     updateWelcomeText();
 }
 // date ends
+
+// offline?
+const offlineMarker = document.getElementById('offline-marker');
+
+function updateOfflineMarker() {
+  if (!navigator.onLine) {
+    offlineMarker.style.display = 'block';
+  } else {
+    offlineMarker.style.display = 'none';
+  }
+}
+
+// Initial check and event listeners
+updateOfflineMarker();
+
+window.addEventListener('online', updateOfflineMarker);
+window.addEventListener('offline', updateOfflineMarker);
