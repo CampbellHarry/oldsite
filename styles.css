@@ -188,9 +188,7 @@ main {
     transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
     color: black;
 }
-.project-box:hover::before{
-    width: 160%;
-}
+
 .project-box::before {
     content: "";
     position: absolute;
@@ -681,9 +679,9 @@ nav ul li a:hover,
     top: 0;
     left: 0;
     width: 100%;
-    background-color: red; /* Change to your preferred color */
+    background-color: blue; 
     color: white;
     text-align: center;
     padding: 5px;
-    display: none; /* Initially hidden */
+    display: none; 
   }
