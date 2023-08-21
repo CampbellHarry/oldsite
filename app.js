@@ -217,4 +217,5 @@ document.addEventListener('DOMContentLoaded', function() {
         menuList.classList.toggle('show');
     });
 });
+// mobile ends
 
