@@ -86,23 +86,7 @@ function redirectToGitHub4() {
 
 // no peek starts
 
-document.addEventListener('contextmenu', (e) => e.preventDefault());
 
-function ctrlShiftKey(e, keyCode) {
-return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-}
-
-document.onkeydown = (e) => {
-// Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
-if (
-event.keyCode === 123 ||
-ctrlShiftKey(e, 'I') ||
-ctrlShiftKey(e, 'J') ||
-ctrlShiftKey(e, 'C') ||
-(e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-)
-return false;
-};
 
 // no peek ends
 
@@ -223,3 +207,14 @@ updateOfflineMarker();
 
 window.addEventListener('online', updateOfflineMarker);
 window.addEventListener('offline', updateOfflineMarker);
+
+// mobile?
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const menuList = document.getElementById('menuList');
+
+    mobileMenuButton.addEventListener('click', function() {
+        menuList.classList.toggle('show');
+    });
+});
+

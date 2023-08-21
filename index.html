@@ -24,7 +24,8 @@
     </header>
 
     <nav>
-        <ul>
+        <div class="mobile-menu-button" id="mobileMenuButton">Menu</div>
+        <ul class="menu-list" id="menuList">
             <li><a href="#projects" data-scroll="projects">Projects</a></li>
             <li><a href="#about" data-scroll="about">About</a></li>
             <li><a href="#contact" data-scroll="contact">Contact</a></li>
@@ -36,6 +37,8 @@
     <div class="box1-text">Hello, I am <span class="underline">Harry</span>.</div>
         <div class="glower1">
         </div>
+        <div class="stars1">
+        </div>
     <div class="box2-text" data-text="A professional frontend developer">A <span class="underline">polished</span> front-end developer.</div>
     <div class="box2-text" data-text="A competent python developer">A <span class="underline">competent</span> Python developer.</div>
     <div class="box2-text" data-text="A proficient IT Specialist">A <span class="underline">proficient</span> IT connoisseur.</div>
@@ -44,7 +47,10 @@
     <div class="box2-text" data-text="An amateur React developer">An <span class="underline">amateur</span> React developer.</div>
     </div>
     </div>
+    <div class="stars">
+    </div>
 </section>
+
 
 
 <section id="projects" class="hidden box3 container responsive">
@@ -52,10 +58,12 @@
                 <h3><u>Projects:</u></h3>
                 <div class="glower">
                 </div>
+                <div class="stars">
+                </div>
             </div>
+            
         </section>
         <section id="projects" class="hidden box3 proj-container container responsive">
-            
             <div class="project-box" onclick="redirectToGitHub2()">
                 
                 <div class="projrole">
@@ -245,7 +253,6 @@
         <div class="social-links" id="contact">
             <a href="https://github.com/CampbellHarry">GitHub</a>
             <a href="https://linkedin.com/in/itharrycampbell">LinkedIn</a>
-            
         </div>
         <div class="footer1">
             <img src="img/H.png" style="height: 60px; width: 60px; border-radius: 10px;">
