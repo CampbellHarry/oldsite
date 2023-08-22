@@ -374,6 +374,7 @@ footer {
     min-height: 10px;
     top: 1px;
     cursor: default;
+    text-decoration: none;
 
 }
 .footer1 h4{
@@ -389,16 +390,19 @@ footer {
     color: white;
     z-index: 7;
     cursor: default;
+    text-decoration: none;
 }
 .footer1 p:hover {
     color: gold;
     transition: 1s;
     cursor: default;
+    text-decoration: none;
 }
 .footer1 h4:hover {
     color: gold;
     cursor: pointer;
     transition: 1s;
+    text-decoration: none;
 }
 
 .social-links {
