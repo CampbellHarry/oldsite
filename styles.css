@@ -392,11 +392,13 @@ footer {
 }
 .footer1 p:hover {
     color: gold;
+    transition: 1s;
     cursor: default;
 }
 .footer1 h4:hover {
     color: gold;
     cursor: pointer;
+    transition: 1s;
 }
 
 .social-links {
