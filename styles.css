@@ -190,6 +190,7 @@ main {
     opacity: 0.3;
     transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
     color: black;
+    left: 16.5px;
 }
 
 .project-box::before {
@@ -456,7 +457,6 @@ nav ul li a:hover,
     transition: 7s;
 }
 .about-container {
-    display: fixed;
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 10px;
@@ -483,6 +483,7 @@ nav ul li a:hover,
     border-bottom-left-radius: 10px;
     display: fixed;
     border-color: blueviolet;
+    left: 20px;
   }
 .about::before {
     content: "";
@@ -671,14 +672,16 @@ nav ul li a:hover,
     color: white;
 }
 .cv{
-    height: auto;
-    width: auto;
+    height: 300;
+    left: 5%;
+    width: 90%;
     overflow: scroll;
     background-color: white;
     color: black;
     border-radius: 10px;
     padding: 10px;
     scrollbar-color: black;
+    position: relative;
 }
 .spacer{
     aspect-ratio: 960/300;
@@ -713,16 +716,29 @@ nav ul li a:hover,
     z-index: -5;
 }
 #offline-marker {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: blue; 
+    position: relative;
+    top: 15px;
+    left: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: red; 
+    box-shadow: 1px 1px 8px 2px red;
     color: white;
     text-align: center;
     padding: 5px;
+    border-radius: 100%;
     display: none; 
-  }
+    animation: hhh 3s infinite;
+}
+
+@keyframes hhh {
+    0%, 100% {
+        box-shadow: 0 0 5px 5px red;
+      }
+      50% {
+        box-shadow: 0 0 7px 10px red;
+      }
+}
   .stars {
     height: 1px;
     width: 1px;
