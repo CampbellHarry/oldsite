@@ -234,4 +234,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 // mobile ends
+// dark
+const themeToggle = document.getElementById('theme-toggle');
 
+themeToggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+    document.project-box.toggle('dark-mode')
+});
