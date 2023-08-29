@@ -9,6 +9,22 @@
     --accent: #3863c7;
 }
 
+.shiny::after {
+    content: "";
+    position: absolute;
+    top: calc(var(--y, 0) * 1px + 120px);
+    left: calc(var(--x, 0) * 1px - 50px);
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(white, #0062ff00 50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: -100000;
+  }
+  
+  .shiny:hover::after {
+    opacity: 0.15;
+  }
 
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
@@ -450,7 +466,7 @@ footer {
     left: 4.5%;
     margin: 0 -100px 10px 10px;
     text-align: left;
-    color: white;
+    color: black;
     text-shadow: 5px 5px 100px white;
     min-height: 10px;
     top: 1px;
