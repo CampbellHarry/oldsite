@@ -485,7 +485,7 @@ footer {
 .footer1 p{
     font-size: small;
     color: white;
-    z-index: 7;
+    z-index: 199999999999999999999999999999999999999999999999999;
     cursor: default;
     text-decoration: none;
 }
