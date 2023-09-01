@@ -1,26 +1,32 @@
 // Text change script starts
 
-
 const textElements1 = document.querySelectorAll('.box1-text');
 const textElements2 = document.querySelectorAll('.box2-text');
 let currentIndex1 = 0;
 let currentIndex2 = 0;
 
 function showNextText() {
+  textElements1[currentIndex1].classList.add('fade-out');
+  textElements2[currentIndex2].classList.add('fade-out');
+
+  setTimeout(() => {
     textElements1[currentIndex1].style.display = 'none';
+    textElements1[currentIndex1].classList.remove('fade-out');
     currentIndex1 = (currentIndex1 + 1) % textElements1.length;
     textElements1[currentIndex1].style.display = 'inline';
 
     textElements2[currentIndex2].style.display = 'none';
+    textElements2[currentIndex2].classList.remove('fade-out');
     currentIndex2 = (currentIndex2 + 1) % textElements2.length;
     textElements2[currentIndex2].style.display = 'inline';
+  }, 300);
 }
 
 // Show the first text elements
 textElements1[currentIndex1].style.display = 'inline';
 textElements2[currentIndex2].style.display = 'inline';
 
-// Call the showNextText function every 3 seconds (2000 milliseconds)
+
 setInterval(showNextText, 3000);
 
 
