@@ -9,6 +9,17 @@
     --accent: #3863c7;
 }
 
+.box2-text {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+
+.box2-text.fade-out {
+    opacity: 0;
+    transform: 0.4s;
+}
+
 .shiny::after {
     content: "";
     position: absolute;
@@ -33,6 +44,9 @@
     }
     .about {
         width: 100%;
+    }
+    body{
+        font-size: smaller;
     }
 }
 
@@ -428,6 +442,8 @@ main {
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     opacity: 0.7;
+    backdrop-filter: blur(10px);
+    transform: 6s;
 }
 
 @keyframes huerotate {
@@ -533,7 +549,7 @@ header{
 nav ul li a:hover,
 .project-box {
     border-width: 5px;
-    border-color: white;
+    border-color: black;
 }
 
 
@@ -653,6 +669,7 @@ nav ul li a:hover,
     border-width: 2px;
     border-style: solid;
     font-size: x-large;
+    text-align: center;
     text-indent: 5px;
 }
 
@@ -670,6 +687,8 @@ nav ul li a:hover,
 .about:hover {
     transform: scale(1.1);
     border-radius: 10px;
+    backdrop-filter: blur(1000px);
+    transform: 1s;
 }
 
 * {
@@ -874,4 +893,3 @@ nav ul li a:hover,
 .menu-list li {
     margin: 0 15px;
 }
-
