@@ -28,14 +28,10 @@ textElements2[currentIndex2].style.display = 'inline';
 
 
 setInterval(showNextText, 3000);
-
-
 // Text change script ends
 
 
 // scroll smother starts
-
-
 const observer = new IntersectionObserver((entries) => {
 entries.forEach((entry) => {
     console.log(entry)
@@ -68,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     })
 })
-
 // scroll smother ends
 
 // For the github clicker bank
@@ -108,12 +103,9 @@ document.onkeydown = (e) => {
     )
     return false;
     };;
-
-
 // no peek ends
 
 // date starts
-
 var date1 = new Date('7/12/2023');
 var date2 = new Date();
 var difference = date2.getTime() - date1.getTime();
