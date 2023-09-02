@@ -250,3 +250,11 @@ button.addEventListener("mousemove", (e) => {
   button.style.setProperty("--y", e.clientY - y);
 });
 //shina ends
+//button cv download start
+document.getElementById("downloadButton").addEventListener("click", function() {
+    var downloadLink = document.querySelector("a[href='HarryC.pdf']");
+    if (downloadLink) {
+        downloadLink.click();
+    }
+});
+//button cv download end
