@@ -84,6 +84,7 @@ body {
     scroll-behavior: smooth;
     max-width: 100%;
     background-color: black;
+    overflow-x: hidden;
 }
 .theme-switch {
     position: relative;
