@@ -84,7 +84,7 @@ body {
     scroll-behavior: smooth;
     max-width: 100%;
     background-color: black;
-    overflow: scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 .theme-switch {
