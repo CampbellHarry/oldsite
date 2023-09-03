@@ -45,8 +45,24 @@
     .about {
         width: 100%;
     }
-    body{
+    body {
         font-size: smaller;
+    }
+    nav ul li a {
+        font-size: 13.5px !important; /* Add !important to override existing styles */
+        padding: 3px 0px !important; /* Add !important to override existing styles */
+        margin: 0px 0 !important; /* Add !important to override existing styles */
+    }
+    .box1-text{
+        font-size: 25px !important;
+        text-align: center;
+    }
+    .box2-text{
+        font-size: 25px !important;
+        text-align: center;
+    }
+    section{
+        min-height: 30vh !important;
     }
 }
 
@@ -56,10 +72,16 @@
         justify-content: center;
     }
     .about {
-        width: 48%;
+        width: 100%;
+    }
+    .box1-text{
+        text-align: center;
+    }
+    .box2-text{
+        text-align: center;
+        font-size: 40px !important;
     }
 }
-
 /* Desktop Styles */
 @media only screen and (min-width: 1025px) {
     .about-container {
@@ -150,6 +172,7 @@ section{
 header {
     text-align: center;
     padding: 25px 0;
+    width: 100%;
     background-color: #333333;
     background-image: linear-gradient(45deg, gold, #a200ff);
     align-items: center;
@@ -301,7 +324,7 @@ main {
     opacity: 0.3;
     transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
     color: black;
-    left: 16.5px;
+
 }
 
 .project-box::before {
