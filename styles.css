@@ -587,7 +587,6 @@ nav ul li a:hover,
     border-bottom-left-radius: 10px;
     display: fixed;
     border-color: blueviolet;
-    left: 20px;
   }
 .about::before {
     content: "";
@@ -793,7 +792,7 @@ nav ul li a:hover,
 }
 .cv:hover{
     box-shadow: 0px 0px 0px 0px transparent;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 1s;
 }
 .spacer{
     aspect-ratio: 960/300;
@@ -897,4 +896,46 @@ nav ul li a:hover,
 
 .menu-list li {
     margin: 0 15px;
+}
+.linkedinc {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+  
+
+.linkedin {
+    width: 400px;
+    height: auto;
+    margin: 20px;
+    position: relative;
+    font-size: 24px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+
+    border-width: 3px;
+    box-shadow: h-offset v-offset blur spread all;
+    border-style: solid;
+    opacity: 1;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: fixed;
+    border-color: #0077B5;
+}
+.linkedinuser{
+    background-color: transparent;
+    height: 50px;
+    top: 0px;
+    border-bottom: #0077B5 5px solid;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.linkedin:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    backdrop-filter: blur(0.6px);
+    transform: 1s;
 }
