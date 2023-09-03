@@ -64,7 +64,13 @@
     section{
         min-height: 30vh !important;
     }
+    header{
+        width: 100% !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
+    }
 }
+
 
 /* Tablet Styles */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
