@@ -978,7 +978,7 @@ nav ul li a:hover,
     background-color: transparent;
     height: 50px;
     top: 0px;
-    border-bottom: gold 5px solid;
+    border-bottom: #0077B5 5px solid;
     padding: 5px;
     text-align: center;
     cursor: pointer;
@@ -988,7 +988,9 @@ nav ul li a:hover,
     border-radius: 10px;
     backdrop-filter: blur(0.6px);
     transform: 1s;
+    border-color: gold;
     .linkedinuser{
         color: gold;
+        border-bottom-color: gold;
     }
 }
