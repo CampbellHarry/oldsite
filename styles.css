@@ -49,9 +49,10 @@
         font-size: smaller;
     }
     nav ul li a {
-        font-size: 13.5px !important; /* Add !important to override existing styles */
-        padding: 3px 0px !important; /* Add !important to override existing styles */
-        margin: 0px 0 !important; /* Add !important to override existing styles */
+        font-size: 13.5px !important; 
+        padding: 3px 0px !important; 
+        margin: 0px 0 !important; 
+        border-width: 2px !important;
     }
     .box1-text{
         font-size: 25px !important;
@@ -86,6 +87,9 @@
     .box2-text{
         text-align: center;
         font-size: 40px !important;
+    }
+    nav ul li a {
+        border-width: 3px;
     }
 }
 /* Desktop Styles */
