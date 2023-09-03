@@ -1,6 +1,5 @@
 @media screen and (max-width: 600px) {
-    /* Adjust the max-width value as per your requirement */
     .responsive {
-      font-size: 16px; /* Adjust the font size as needed */
+      font-size: 16px; 
     }
   }
