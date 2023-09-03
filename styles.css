@@ -938,4 +938,7 @@ nav ul li a:hover,
     border-radius: 10px;
     backdrop-filter: blur(0.6px);
     transform: 1s;
+    .linkedinuser{
+        color: gold;
+    }
 }
