@@ -85,6 +85,14 @@ function redirectToGitHub4() {
     window.open("https://github.com/CampbellHarry/icons", "_blank");
 }
 
+function redirectTofinly() {
+    window.open("https://www.linkedin.com/in/finleymartin/", "_blank");
+}
+
+function redirectTokonrad() {
+    window.open("https://www.linkedin.com/in/konrad-gardy-2508111a5/", "_blank");
+}
+
 // no peek starts
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
