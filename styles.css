@@ -125,7 +125,7 @@ body {
 }
 .dark-mode {
     background-color: slategray; 
-    color: black;
+    color: #121212;
 }
 
 .switch {
