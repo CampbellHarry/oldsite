@@ -50,9 +50,10 @@
     }
     nav ul li a {
         font-size: 13.5px !important; 
-        padding: 3px 0px !important; 
+        padding: 0.9px 0px !important; 
         margin: 0px 0 !important; 
         border-width: 2px !important;
+        top: 5px;
     }
     .box1-text{
         font-size: 25px !important;
