@@ -70,6 +70,9 @@
         padding-right: 0 !important;
         margin: 0 !important;
     }
+    .warnbox{
+        width: 200px;
+    }
 }
 
 
@@ -90,6 +93,9 @@
     }
     nav ul li a {
         border-width: 3px;
+    }
+    .warnbox{
+        width: 400px;
     }
 }
 /* Desktop Styles */
@@ -961,7 +967,6 @@ nav ul li a:hover,
     font-size: 24px;
     color: #ffffff;
     transition: transform 0.3s ease;
-
     border-width: 3px;
     box-shadow: h-offset v-offset blur spread all;
     border-style: solid;
@@ -990,4 +995,31 @@ nav ul li a:hover,
         color: gold;
         border-bottom-color: gold;
     }
+}
+.warnboxc {
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.warnbox{
+    width: 500px;
+    height: auto;
+    margin: 20px;
+    position: relative;
+    font-size: 24px;
+    color: #ffffff;
+    border: 3px solid #ffcc00;
+    text-align: center;
+}
+
+.warnbox p {
+    color: transparent;
+    text-shadow: 0 0 10px white;
+}
+
+.warnbox p:hover {
+    color: white;
+    text-shadow: none;
 }
