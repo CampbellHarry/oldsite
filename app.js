@@ -93,6 +93,14 @@ function redirectTokonrad() {
     window.open("https://www.linkedin.com/in/konrad-gardy-2508111a5/", "_blank");
 }
 
+function redirectTogit() {
+    window.open("https://github.com/CampbellHarry/", "_blank");
+}
+
+function redirectTolinked() {
+    window.open("https://linkedin.com/in/itharrycampbell", "_blank");
+}
+
 // no peek starts
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
