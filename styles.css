@@ -609,7 +609,7 @@ nav ul li a:hover,
 
 .hidden{
     opacity: 0;
-    transition: 2s;
+    transition: 0.5s;
 }
 .show{
     opacity: 1;
