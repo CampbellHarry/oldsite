@@ -1018,6 +1018,7 @@ nav ul li a:hover,
     position: relative;
     margin: 20px;
     backdrop-filter: blur(0.6px);
+    transition: 1s ease-in-out;
 }
 .linkedin1{
     height: 100px;
@@ -1025,13 +1026,23 @@ nav ul li a:hover,
     background-color: transparent;
     position: relative;
     margin: 20px;
+    transition: 1s ease-in-out;
     backdrop-filter: blur(0.6px);
 }
 .linkedin1:hover{
     transform: scale(1.2);
-    transform: 1s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .github:hover{
     transform: scale(1.2);
-    transform: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+.expandyt:hover{
+    transform: scale(1.2);
+}
+.expandyt{
+    height: 60px; 
+    width: 60px; 
+    border-radius: 10px;
+    transition: 1s ease-in-out
 }
