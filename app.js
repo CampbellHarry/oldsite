@@ -85,6 +85,10 @@ function redirectToGitHub4() {
     window.open("https://github.com/CampbellHarry/icons", "_blank");
 }
 
+function redirectToGitHub5() {
+    window.open("https://github.com/CampbellHarry/assets", "_blank");
+}
+
 function redirectTofinly() {
     window.open("https://www.linkedin.com/in/finleymartin/", "_blank");
 }
