@@ -181,16 +181,6 @@ var h2Element = document.querySelector('.projdays3 h2');
 // Update the content of the <h2> element with the calculated number of days
 h2Element.textContent = days + ' days ago';
 
-var date5 = new Date('8/2/2023');
-var date2 = new Date();
-var difference = date2.getTime() - date4.getTime();
-var days = Math.ceil(difference / (1000 * 3600 * 24));
-
-// Find the <h2> element inside the <div class="projdays">
-var h2Element = document.querySelector('.projdays 3 h2');
-
-// Update the content of the <h2> element with the calculated number of days
-h2Element.textContent = days + ' days ago';
 
 // lang starts with top bar for days
 
