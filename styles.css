@@ -429,7 +429,7 @@ main {
     margin: 0; 
     padding: 9px 0;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     background-color: transparent;
     font-size: 34px;
@@ -441,7 +441,7 @@ main {
     border-style: solid;
     border-color: rgb(0, 225, 255);
     font-size: xx-large;
-    text-indent: 50px;
+    text-indent: 25px;
 }
 
 .projrole{
