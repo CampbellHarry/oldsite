@@ -79,6 +79,12 @@
         width: 10px;
         font-size: xx-small;
     }
+    .glower{
+        box-shadow: 0 0 300px 150px purple !important;
+    }
+    .glower1{
+        box-shadow: 0 0 300px 150px blue !important;
+    }
 }
 
 /* Tablet Styles */
