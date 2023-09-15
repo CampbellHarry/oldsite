@@ -354,7 +354,7 @@ main {
     border-color: black;
     box-shadow: h-offset v-offset blur spread color;
     border-style: solid;
-    opacity: 0.3;
+    opacity: 0.9;
     transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
     color: black;
 }
