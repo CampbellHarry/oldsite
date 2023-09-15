@@ -57,10 +57,12 @@
     .box1-text{
         font-size: 25px !important;
         text-align: center;
+        color: white !important;
     }
     .box2-text{
         font-size: 25px !important;
         text-align: center;
+        color: white !important;
     }
     section{
         min-height: 30vh !important;
@@ -89,11 +91,13 @@
     }
     .box1-text{
         text-align: center;
+        color: white !important;
         
     }
     .box2-text{
         text-align: center;
         font-size: 40px !important;
+        color: white !important;
     }
     nav ul li a {
         border-width: 3px;
