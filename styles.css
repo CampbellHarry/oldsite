@@ -260,7 +260,7 @@ nav ul li a {
     right: 0;
     width: 0;
     bottom: 0px;
-    background: white;
+    background: rgb(0, 195, 255);
     height: 4px;
     transition-property: width;
     transition-duration: 0.3s;
@@ -272,6 +272,11 @@ nav ul li a {
     left: 0;
     right: auto;
     width: 100%;
+}
+
+.goldnh:hover{
+    color: gold;
+    transition: 1s ease;
 }
 
 main {
@@ -748,7 +753,7 @@ nav ul li a:hover,
   }
 
   .underline {
-    border-bottom: 5px solid #a200ff;
+    border-bottom: 5px solid rgb(0, 195, 255);
   }
 
 .box1-text {
