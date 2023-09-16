@@ -71,7 +71,6 @@
         width: 100% !important;
         padding-right: 0 !important;
         margin: 0 !important;
-        background-color: gold !important;
     }
     .warnbox{
         margin: 0;
@@ -84,6 +83,9 @@
     }
     .glower1{
         box-shadow: 0 0 300px 150px blue !important;
+    }
+    .proj-container {
+        grid-template-columns: repeat(1, 127px) !important;
     }
 }
 
@@ -107,9 +109,6 @@
     }
     nav ul li a {
         border-width: 3px;
-    }
-    .warnbox{
-        width: 400px;
     }
 }
 /* Desktop Styles */
@@ -148,45 +147,6 @@ body {
     color: #121212;
 }
 
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--background);
-    transition: 0.4s;
-    border-radius: 34px;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 2px;
-    bottom: 2px;
-    background-color: blue;
-    transition: 0.4s;
-    border-radius: 50%;
-}
-
-input:checked + .slider {
-    background-color: white;
-}
-
-input:checked + .slider:before {
-    transform: translateX(20px);
-}
-
 h1, p {
     margin: 20px;
 }
@@ -195,7 +155,7 @@ section{
     display: grid;
     place-items: center;
     align-items: center;
-    min-height: 50vh;
+    min-height: 30vh;
     font-size: xx-large;
 }
 
@@ -205,7 +165,6 @@ header {
     margin-bottom: 10px;
     width: 100%;
     background-color: #333333;
-    background-image: linear-gradient(45deg, gold, #a200ff);
     align-items: center;
     z-index: 10000000000;
 }
@@ -289,7 +248,7 @@ main {
 }
 
 .pagemaint{
-    margin-bottom: 30px;
+    margin-bottom: 3px;
     width: 100%;
     background-color: red;
     align-items: center;
@@ -339,6 +298,7 @@ main {
 
 .box3 {
     text-align: center;
+    
     margin: 0;
     padding: 0;
     border-radius: 25px;
@@ -360,14 +320,17 @@ main {
     color: white;
 }
 
+
+
 .proj-container {
-    display: fixed;
-    flex-wrap: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 427px);
+    gap: 2px;
     border-radius: 10px;
     justify-content: center;
     margin-top: 50px;
-  }
+    position: relative;
+}
 
 .project-box {
     width: 400px;
@@ -375,7 +338,7 @@ main {
     border-radius: 5px;
     margin: 20px 0;
     padding: 20px;
-    position: relative; 
+    position: relative;
     background-color: white;
     border-radius: 30px;
     font-size: 24px;
@@ -389,6 +352,7 @@ main {
     opacity: 0.9;
     transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
     color: black;
+    z-index: 100000;
 }
 
 .project-box::before {
@@ -396,12 +360,12 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     opacity: 1;
     z-index: -1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+
+  
 
 .project-box1 {
     width: 400px;
@@ -448,8 +412,8 @@ main {
     font-size: 24px;
     transition: transform 0.3s ease;
     position: absolute;
-    top: 200px;
-    left: -.2%;
+    top: 105%;
+    left: 1%;
     border-width: 2px;
     border-style: solid;
     border-color: rgb(0, 225, 255);
@@ -532,6 +496,9 @@ main {
     opacity: 0.7;
     backdrop-filter: blur(10px);
     transform: 6s;
+    border: white 2px solid;
+    z-index: 100000;
+
 }
 
 @keyframes huerotate {
@@ -615,8 +582,9 @@ footer {
 }
 
 header{
-    background-image: linear-gradient(45deg, gold, #a200ff);
     color: white;
+    background-color: transparent;
+    border-bottom: 2px solid gray;
 }
 nav ul li a:hover,
 .project-box {
