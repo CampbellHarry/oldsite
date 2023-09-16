@@ -283,6 +283,22 @@ main {
     padding: 20px;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.pagemaint{
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: red;
+    align-items: center;
+    padding: 10px;
+    top: -21px;
+    position: relative;
+    opacity: 1;
+}
+
 .box1-text,
 .box2-text {
     font-size: 50px; 
