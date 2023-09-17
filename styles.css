@@ -14,7 +14,12 @@
     transition: opacity 0.4s ease-in-out; /* Adjust the duration and timing function as needed */
 }
 
-
+html, body {
+    overflow-x: hidden;
+}
+body {
+    position: relative
+}
 .box2-text.fade-out {
     opacity: 0;
     transform: 0.4s;
@@ -41,10 +46,9 @@
 @media only screen and (max-width: 768px) {
     .about-container {
         justify-content: center;
+        grid-template-columns: repeat(1, -00px) !important;
     }
-    .about {
-        width: 100%;
-    }
+
     body {
         font-size: smaller;
     }
@@ -87,15 +91,24 @@
     .proj-container {
         grid-template-columns: repeat(1, 127px) !important;
     }
+    .linkedinc{
+        grid-template-columns: repeat(1, 127px) !important;
+    }
+    .about {
+        width: 90%;
+        left: -50px !important;
+    }
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1010px) {
     .about-container {
         justify-content: center;
+        grid-template-columns: repeat(1, 127px) !important;
     }
     .about {
-        width: 100%;
+        width: 90%;
+        left: -20px !important;
     }
     .box1-text{
         text-align: center;
@@ -109,6 +122,12 @@
     }
     nav ul li a {
         border-width: 3px;
+    }
+    .proj-container {
+        grid-template-columns: repeat(1, 127px) !important;
+    }
+    .linkedinc{
+        grid-template-columns: repeat(1, 127px) !important;
     }
 }
 /* Desktop Styles */
@@ -607,12 +626,14 @@ nav ul li a:hover,
     border-radius: 10px;
     justify-content: center;
     margin-top: 50px;
+    grid-template-columns: repeat(2, 627px);
+    display: grid;
   }
   
 
   .about {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     margin: 20px;
     padding: 20px;
     position: relative;
@@ -622,12 +643,10 @@ nav ul li a:hover,
     cursor: crosshair;
     border-width: 3px;
     box-shadow: h-offset v-offset blur spread all;
-    border-style: solid;
     opacity: 1;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     display: fixed;
-    border-color: blueviolet;
   }
 .about::before {
     content: "";
@@ -646,7 +665,7 @@ nav ul li a:hover,
 
 .aboutcode{
     width: 350px;
-    height: 50px;
+    height: auto;
     border-radius: 5px;
     margin: 0;
     padding: 9px 0;
@@ -655,20 +674,18 @@ nav ul li a:hover,
     align-items: center;
     background-color: transparent;
     font-size: 34px;
-    color: white;
+    color: gray;
     transition: transform 0.3s ease;
     position: absolute;
     top: 10px;
-    left: 4.5%;
-    border-style: solid;
-    border-color: white;
+    left: 20px;
     font-size: xx-large;
     text-indent: 5px;
     border-width: 3px;
 }
 .aboutdev{
     width: 250px;
-    height: 50px;
+    height: auto;
     border-radius: 5px;
     margin: 0; 
     padding: 9px 0;
@@ -683,7 +700,6 @@ nav ul li a:hover,
     top: 58px;
     left: 4.5%;
     border-width: 2px;
-    border-style: solid;
     font-size: xx-large;
     text-indent: 5px;
     text-align: center;
@@ -691,7 +707,7 @@ nav ul li a:hover,
 
 .abouttext{
     width: 350px;
-    height: 250px;
+    height: auto;
     border-radius: 5px;
     margin: 0; 
     padding: 9px 2px;
@@ -703,11 +719,9 @@ nav ul li a:hover,
     color: white;
     transition: transform 0.3s ease;
     position: absolute; 
-    top: 125px;
-    left: 4.5%;
+    top: 30px;
+    left: 0;
     border-width: 2px;
-    border-style: solid;
-    font-size: x-large;
     text-align: center;
     text-indent: 5px;
 }
@@ -726,7 +740,6 @@ nav ul li a:hover,
 .about:hover {
     transform: scale(1.1);
     border-radius: 10px;
-    backdrop-filter: blur(1000px);
     transform: 1s;
 }
 
@@ -944,6 +957,7 @@ nav ul li a:hover,
     border-radius: 10px;
     justify-content: center;
     margin-top: 50px;
+    grid-template-columns: repeat(2, 627px);
 }
   
 
