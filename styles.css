@@ -178,7 +178,7 @@ section{
     display: grid;
     place-items: center;
     align-items: center;
-    min-height: 30vh;
+    min-height: 40vh;
     font-size: xx-large;
 }
 
