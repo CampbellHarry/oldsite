@@ -100,7 +100,7 @@ body {
     }
     .container1{
         grid-template-columns: repeat(1, 0px) !important;
-        left: -120px !important;
+        left: -150px !important;
     }
 }
 
