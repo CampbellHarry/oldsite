@@ -90,11 +90,11 @@ function redirectToGitHub5() {
 }
 
 function redirectTofinly() {
-    window.open("https://www.linkedin.com/in/finleymartin/", "_blank");
+    window.open("https://www.linkedin.com/in/itharrycampbell/details/recommendations/", "_blank");
 }
 
 function redirectTokonrad() {
-    window.open("https://www.linkedin.com/in/konrad-gardy-2508111a5/", "_blank");
+    window.open("https://www.linkedin.com/in/itharrycampbell/details/recommendations/", "_blank");
 }
 
 function redirectTogit() {
