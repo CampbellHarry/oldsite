@@ -640,7 +640,7 @@ nav ul li a:hover,
     font-size: 24px;
     color: #ffffff;
     transition: transform 0.3s ease;
-    cursor: crosshair;
+    cursor: pointer;
     border-width: 3px;
     box-shadow: h-offset v-offset blur spread all;
     opacity: 1;
