@@ -1,4 +1,4 @@
-Creative Commons Attribution-NonCommercial [version] International License.
+Creative Commons Attribution-NonCommercial 4.0 International License.
 
 Copyright (c) 2023 Harry Campbell
 
