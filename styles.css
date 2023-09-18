@@ -8,6 +8,28 @@
     --accent: #3863c7;
 }
 
+/* width */
+body::-webkit-scrollbar {
+    width: 5px;
+    margin-right: 2px;
+  }
+  
+  /* Track */
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0.5px;
+  }
+  
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    background: rgb(0, 162, 255);
+    border-end-start-radius: 5px;
+  }
+  
+  /* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
 
 .box2-text {
     opacity: 1;
