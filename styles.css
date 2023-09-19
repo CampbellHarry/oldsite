@@ -16,13 +16,12 @@ body::-webkit-scrollbar {
   
   /* Track */
   body::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 0.5px;
+    background: transparent;
   }
   
   /* Handle */
   body::-webkit-scrollbar-thumb {
-    background: rgb(0, 162, 255);
+    background: gold;
     border-end-start-radius: 5px;
   }
   
