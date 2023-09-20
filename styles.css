@@ -185,7 +185,7 @@ body {
     font-family: monospace;
     scroll-behavior: smooth;
     max-width: 100%;
-    background-color: black;
+    background-color: #0b1316;
     overflow-x: hidden;
 }
 .theme-switch {
@@ -360,6 +360,7 @@ main {
     margin: 0;
     padding: 0;
     border-radius: 25px;
+    position: relative;
     height: 50px;
     width: 400px;
     font-size: xx-large;
@@ -891,8 +892,9 @@ nav ul li a:hover,
 .glower {
     height: 1px;
     width: 1px;
+    position: absolute;
     border-radius: 50%;
-    box-shadow: 0 0 600px 250px purple;
+    box-shadow: 0 0 300px 200px rgba(0, 255, 255, 0.5), 0 0 300px 200px rgba(128, 0, 255, 0.5);
     background-color: transparent;
 }
 .glower1 {
