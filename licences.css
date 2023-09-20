@@ -1,0 +1,60 @@
+@media only screen and (max-width: 768px) {
+    .projectstext{
+        width: 90% !important;
+        height:70% !important;
+    }
+    .underline1{
+        font-size: 30px !important;
+    }
+    .box1-text{
+        font-size: 40px !important;
+    }
+    .box2-text{
+        font-size: 40px !important;
+    }
+}
+
+.underline1{
+    font-size: 30px;
+}
+
+
+.legal{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+.legalh2{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+.projectstext{
+    width: 900px;
+    height: 600px;
+    white-space: initial;
+    word-wrap: break-word;
+    color: white;
+}
+.projectstext::-webkit-scrollbar {
+    width: 5px;
+    margin-right: 2px;
+  }
+  
+  /* Track */
+.projectstext::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+.projectstext::-webkit-scrollbar-thumb {
+    background: gray;
+    border-end-start-radius: 5px;
+  }
+  
+  /* Handle on hover */
+.projectstext::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
