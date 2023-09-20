@@ -8,6 +8,13 @@
     --accent: #3863c7;
 }
 
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 1400px;
+}
+
 /* width */
 body::-webkit-scrollbar {
     width: 5px;
@@ -199,14 +206,14 @@ section{
     display: grid;
     place-items: center;
     align-items: center;
-    min-height: 40vh;
+    min-height: 400px;
     font-size: xx-large;
 }
 
 header {
     text-align: center;
     padding: 20px 0;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     width: 100%;
     background-color: #333333;
     align-items: center;
@@ -628,7 +635,6 @@ footer {
 header{
     color: white;
     background-color: transparent;
-    border-bottom: 2px solid gray;
 }
 nav ul li a:hover,
 .project-box {
