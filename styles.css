@@ -379,7 +379,7 @@ main {
 
 .proj-container {
     display: grid;
-    grid-template-columns: repeat(2, 427px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2px;
     border-radius: 10px;
     justify-content: center;
