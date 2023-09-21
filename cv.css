@@ -1,0 +1,12 @@
+body{
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+nav ul li a {
+    font-size: 20px !important; 
+    padding: 0.5px 0px !important; 
+    margin: 0px 0 !important; 
+    top: 5px;
+}
+}
