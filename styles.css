@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
   
   /* Handle */
   body::-webkit-scrollbar-thumb {
-    background: gold;
+    background: #2776EA;
     border-end-start-radius: 5px;
   }
   
