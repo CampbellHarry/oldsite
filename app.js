@@ -104,6 +104,9 @@ function redirectTogit() {
 function redirectTolinked() {
     window.open("https://linkedin.com/in/itharrycampbell", "_blank");
 }
+function redirectTolegal() {
+    window.open("https://campbellharry.github.io/legal", "_self");
+}
 
 // no peek starts
 document.addEventListener('contextmenu', (e) => e.preventDefault());
