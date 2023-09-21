@@ -1209,7 +1209,7 @@ nav ul li a:hover,
     top: 20px;
     color: white;
     padding: 10px;
-    font-size: 13px;
+    font-size: auto;
     text-align: left;
     border-radius: 10px;
 }
