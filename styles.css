@@ -1168,3 +1168,51 @@ nav ul li a:hover,
     height: 50px;
     text-align: center;
 }
+.certcont{
+    display: grid;
+    grid-template-columns: repeat(1);
+    position: relative;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.cirth{
+    width: 400px;
+    height: 330px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    filter: hue-rotate(360deg);
+    border-width: 5px;
+    border-color: #007BFF;
+    box-shadow: h-offset v-offset blur spread color;
+    border-style: solid;
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    color: black;
+    z-index: 100000;
+}
+.cirtpic{
+    align-items: center;
+    background-color: transparent;
+    height: 200px;
+    position: relative;
+}
+.namec{
+    height: 50px;
+    border: #007BFF 4px solid;
+    position: relative;
+    top: 20px;
+    color: white;
+    padding: 10px;
+    font-size: 14.3px;
+    text-align: left;
+    border-radius: 10px;
+}
+.cirth:hover{
+    transform: scale(1.1);
+}

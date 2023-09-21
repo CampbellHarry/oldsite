@@ -110,6 +110,9 @@ function redirectTolegal() {
 function redirecToCV() {
     window.open("https://campbellharry.github.io/cv", "_self");
 }
+function certlink() {
+    window.open("https://arcx.io/verify-certificate?id=3ec3d22c435e3e6cae99145fdcd93dbb97e684b2&k=91e0f1e4525340569ed484fc9a6ae9f7", "_self");
+}
 
 // no peek starts
 document.addEventListener('contextmenu', (e) => e.preventDefault());
