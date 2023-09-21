@@ -107,6 +107,9 @@ function redirectTolinked() {
 function redirectTolegal() {
     window.open("https://campbellharry.github.io/legal", "_self");
 }
+function redirecToCV() {
+    window.open("https://campbellharry.github.io/cv", "_self");
+}
 
 // no peek starts
 document.addEventListener('contextmenu', (e) => e.preventDefault());

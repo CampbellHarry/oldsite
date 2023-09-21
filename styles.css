@@ -136,7 +136,7 @@ body {
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 769px) and (max-width: 1010px) {
+@media only screen and (min-width: 769px) and (max-width: 1250px) {
     .about-container {
         justify-content: center;
         grid-template-columns: repeat(1, 127px) !important;
@@ -163,6 +163,9 @@ body {
     }
     .linkedinc{
         grid-template-columns: repeat(1, 127px) !important;
+    }
+    .about-container{
+        grid-template-columns: repeat(2, 427px) !important;
     }
 }
 /* Desktop Styles */
@@ -660,7 +663,7 @@ nav ul li a:hover,
     border-radius: 10px;
     justify-content: center;
     margin-top: 50px;
-    grid-template-columns: repeat(2, 627px);
+    grid-template-columns: repeat(3, 427px);
     display: grid;
   }
   
@@ -674,7 +677,6 @@ nav ul li a:hover,
     font-size: 24px;
     color: #ffffff;
     transition: transform 0.3s ease;
-    cursor: pointer;
     border-width: 3px;
     box-shadow: h-offset v-offset blur spread all;
     opacity: 1;
