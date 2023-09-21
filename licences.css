@@ -1,7 +1,9 @@
 @media only screen and (max-width: 768px) {
-    .projectstext{
-        width: 90% !important;
-        height:70% !important;
+    .projectstext1{
+        width: 80% !important;
+        height: 70% !important;
+        font-size: 20px !important;
+        float: left;
     }
     .underline1{
         font-size: 30px !important;
@@ -38,6 +40,7 @@
     word-wrap: break-word;
     color: white;
     text-align: left;
+    float: left;
 }
 .projectstext::-webkit-scrollbar {
     width: 5px;
