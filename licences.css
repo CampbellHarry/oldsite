@@ -19,8 +19,6 @@
 .underline1{
     font-size: 30px;
 }
-
-
 .legal{
     font-size: 60px;
     text-align: center;
@@ -39,6 +37,7 @@
     white-space: initial;
     word-wrap: break-word;
     color: white;
+    text-align: left;
 }
 .projectstext::-webkit-scrollbar {
     width: 5px;
@@ -60,3 +59,24 @@
 .projectstext::-webkit-scrollbar-thumb:hover {
     background: #ffffff;
   }
+.linked6 {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(45deg, #02455a, rgb(162, 180, 0));
+    cursor: pointer;
+    transition: transform 0.3s ease, top 0.3s ease;
+}
+
+.linked6:hover {
+    transform: scale(1.05);
+    top: 18px;
+    filter: brightness(1.2);
+}
