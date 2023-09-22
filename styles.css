@@ -133,6 +133,9 @@ body {
         grid-template-columns: repeat(1, 0px) !important;
         left: -150px !important;
     }
+    .holderc{
+        grid-template-columns: repeat(1, 0px) !important;
+    }
 }
 
 /* Tablet Styles */
@@ -166,6 +169,9 @@ body {
     }
     .about-container{
         grid-template-columns: repeat(2, 427px) !important;
+    }
+    .holderc{
+        grid-template-columns: repeat(1, 0) !important;
     }
 }
 /* Desktop Styles */
@@ -1168,9 +1174,9 @@ nav ul li a:hover,
     height: 50px;
     text-align: center;
 }
-.certcont{
+.holderc{
     display: grid;
-    grid-template-columns: repeat(1);
+    grid-template-columns: repeat(2, 427px);
     position: relative;
     justify-content: center;
     margin-top: 50px;

@@ -119,7 +119,9 @@ function certlink() {
 function certlink3() {
     window.open("https://www.credly.com/badges/28689d13-6204-4648-aa09-9191cc93240b/public_url", "_self");
 }
-
+function certlink2() {
+    window.open("https://www.credly.com/badges/d4943dd9-ae6b-4962-b268-283cc5d6c7be/public_url", "_self");
+}
 // no peek starts
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
