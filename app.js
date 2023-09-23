@@ -100,7 +100,6 @@ function redirectTokonrad() {
 function redirectTogit() {
     window.open("https://github.com/CampbellHarry/", "_blank");
 }
-
 function redirectTolinked() {
     window.open("https://linkedin.com/in/itharrycampbell", "_blank");
 }
@@ -110,17 +109,8 @@ function redirectTolegal() {
 function redirecToCV() {
     window.open("https://campbellharry.github.io/cv", "_self");
 }
-function certlink1() {
-    window.open("https://arcx.io/verify-certificate?id=3ec3d22c435e3e6cae99145fdcd93dbb97e684b2&k=91e0f1e4525340569ed484fc9a6ae9f7", "_self");
-}
-function certlink() {
-    window.open("https://imgur.com/x1FvlGy", "_self");
-}
-function certlink3() {
-    window.open("https://www.credly.com/badges/28689d13-6204-4648-aa09-9191cc93240b/public_url", "_self");
-}
-function certlink2() {
-    window.open("https://www.credly.com/badges/d4943dd9-ae6b-4962-b268-283cc5d6c7be/public_url", "_self");
+function cert() {
+    window.open("https://campbellharry.github.io/certificatons", "_self")
 }
 // no peek starts
 document.addEventListener('contextmenu', (e) => e.preventDefault());
@@ -269,13 +259,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 // mobile ends
-// dark
-const themeToggle = document.getElementById('theme-toggle');
-
-themeToggle.addEventListener('change', () => {
-    document.body.classList.toggle('dark-mode');
-});
-
 //shina
 const button = document.querySelector(".shiny");
 

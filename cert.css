@@ -1,0 +1,92 @@
+@media only screen and (max-width: 1014px) {
+    .aa {
+        display: flex;
+        justify-content: center;
+        font-size: 50px !important;
+    }
+    .welc{
+        font-size: 30px !important;
+    }
+    .holder{
+        grid-template-columns: repeat(1, 0px) !important;
+        gap: 0px !important;
+    }
+    .box{
+        width: 300px !important;
+        left: -160px !important;
+    }
+}
+.holder{
+    display: grid;
+    grid-template-columns: repeat(2, 427px);
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    gap: 20px;
+    align-items: center;
+}
+.box{
+    height: auto;
+    width: 400px;
+    background-color: transparent;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    border: white solid 5px;
+    z-index: 1;
+    align-items: center;
+    position: relative;
+}
+.pic{
+    width: auto;
+    background-color: transparent;
+    height: auto;
+    border: 5px solid white;
+    z-index: 10;
+    align-items: center;
+    position: relative;
+}
+.awarding{
+    width: auto;
+    height: auto;
+    top: 0px;
+    position: relative;
+    border: 5px solid white;
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+.name{
+    width: auto;
+    height: auto;
+    border: 5px solid white;
+    text-align: center;
+    color: white;
+    font-size: auto;
+    z-index: 10;
+}
+.aboutt{
+    width: auto;
+    height: auto;
+    border: 5px solid white;
+    color: white;
+    font-size: auto;
+    text-align: center;
+    z-index: 10;
+    font-size: 16px;
+}
+.clica{
+    height: 40px;
+    width: 50%;
+    text-align: center;
+    left: 25%;
+    position: relative;
+    background-image: linear-gradient(45deg, #00eeff, #004585);
+    border: 0px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+}
+.clica:hover{
+    box-shadow: #00eeff 0 0px 5px 1px;
+}
