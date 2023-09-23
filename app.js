@@ -110,7 +110,7 @@ function redirecToCV() {
     window.open("https://campbellharry.github.io/cv", "_self");
 }
 function cert() {
-    window.open("https://campbellharry.github.io/certificatons", "_self")
+    window.open("https://campbellharry.github.io/certifications", "_self")
 }
 // no peek starts
 document.addEventListener('contextmenu', (e) => e.preventDefault());
