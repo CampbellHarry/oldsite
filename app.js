@@ -112,6 +112,9 @@ function redirecToCV() {
 function cert() {
     window.open("https://campbellharry.github.io/certifications", "_self")
 }
+function cert1() {
+    window.open("https://campbellharry.github.io/certifications#google", "_self")
+}
 // no peek starts
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
