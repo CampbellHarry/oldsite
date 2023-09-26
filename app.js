@@ -214,7 +214,10 @@ const translations = {
 };
 
 function updateWelcomeText() {
+    console.log('Updating welcome text...');
     const welcomeTextElement = document.getElementById("welcomeText");
+    console.log('hr:', hr);
+    console.log('currentLanguage:', currentLanguage);
     
     if (hr < 12) {
         welcomeTextElement.textContent = translations[currentLanguage].morning;
