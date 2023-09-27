@@ -19,7 +19,7 @@ function showNextText() {
     textElements2[currentIndex2].classList.remove('fade-out');
     currentIndex2 = (currentIndex2 + 1) % textElements2.length;
     textElements2[currentIndex2].style.display = 'inline';
-  }, 300);
+  }, 400);
 }
 
 // Show the first text elements
@@ -27,7 +27,7 @@ textElements1[currentIndex1].style.display = 'inline';
 textElements2[currentIndex2].style.display = 'inline';
 
 
-setInterval(showNextText, 3000);
+setInterval(showNextText, 4000);
 // Text change script ends
 
 
