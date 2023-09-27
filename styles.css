@@ -199,7 +199,8 @@ body {
     font-family: monospace;
     scroll-behavior: smooth;
     max-width: 100%;
-    background-color: #0b1316;
+    background-color: #000;
+    background-image: url(/img/background_noisy.webp);
     overflow-x: hidden;
 }
 .theme-switch {
@@ -434,7 +435,7 @@ main {
 }
 
 .project-box::after {
-    border-image: linear-gradient(to left, transparent, rgb(255, 255, 255), transparent);
+    border-image: linear-gradient(to left, transparent, rgb(0, 247, 255), transparent);
     border-image-slice: 1;
     transform: scaleX(0);
     transform-origin: center;
@@ -606,7 +607,6 @@ header{
 nav ul li a:hover,
 .project-box {
     border-width: 5px;
-    border-color: black;
 }
 
 
@@ -861,6 +861,7 @@ nav ul li a:hover,
     border-radius: 50%;
     box-shadow: 0 0 300px 200px rgba(0, 255, 255, 0.5), 0 0 300px 200px rgba(128, 0, 255, 0.5);
     background-color: transparent;
+    z-index: -100000000000000000000000000000000;
 }
 .glower1 {
     height: 1px;
@@ -869,6 +870,7 @@ nav ul li a:hover,
     box-shadow: 5px 100px 800px 200px blue;
     background-color: transparent;
     z-index: -5;
+    z-index: -100000000000000000000000000000000;
 }
 .glower2 {
     height: 1px;
@@ -877,6 +879,7 @@ nav ul li a:hover,
     box-shadow: 5px 100px 400px 200px gold;
     background-color: transparent;
     z-index: -5;
+    z-index: -100000000000000000000000000000000;
 }
 #offline-marker {
     position: relative;
