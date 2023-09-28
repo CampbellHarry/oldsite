@@ -1181,3 +1181,13 @@ nav ul li a:hover,
 .cirth:hover{
     transform: scale(1.1);
 }
+.messageimp{
+    border: 2px solid red;
+    width: auto;
+    border-radius: 5px;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    top: 10px;
+    position: relative;
+}
