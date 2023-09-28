@@ -324,7 +324,19 @@ main {
     opacity: 1;
 }
 
-.box1-text,
+.box1-text{
+    font-size: 50px; 
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    clip-path: inset(-6px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+    position: absolute;
+    margin-bottom: 280px;
+    margin-top: 140px;
+}
 .box2-text {
     font-size: 50px; 
     font-weight: bold;
@@ -334,6 +346,7 @@ main {
     clip-path: inset(-6px round 10px);
     animation: huerotate 6s infinite linear;
     filter: hue-rotate(360deg);
+    position: absolute;
 }
 
 .box1-text::after {
@@ -1182,7 +1195,7 @@ nav ul li a:hover,
     transform: scale(1.1);
 }
 .messageimp{
-    border: 2px solid red;
+    border: 2px solid green;
     width: auto;
     border-radius: 5px;
     height: auto;
