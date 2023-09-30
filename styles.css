@@ -1086,14 +1086,14 @@ nav ul li a:hover,
 }
 
 .linkedc {
-    position: relative;
+
     text-align: center;
     padding: 20px;
     width: 250px;
     background-color: transparent;
     border-radius: 10px;
     transition: transform 0.3s ease;
-    left: 30px;
+    left: 0px;
 }
 
 .linkedc:hover {
