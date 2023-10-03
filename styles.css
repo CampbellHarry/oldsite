@@ -69,8 +69,10 @@ body {
   .shiny:hover::after {
     opacity: 0.15;
   }
-@media only screen and (max-width: 368px) {
-
+@media only screen and (max-width: 400px) {
+    .project-box {
+        width: 300px !important; 
+    }
 }
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
@@ -409,11 +411,11 @@ main {
     border-radius: 10px;
     justify-content: center;
     margin-top: 50px;
-
 }
 
 .project-box {
-    width: 400px;
+    flex: 1 1 400px;
+    width: 400px; /* Fixed width in pixels */
     margin: 20px 0;
     padding: 20px;
     background-color: transparent;
@@ -424,6 +426,7 @@ main {
     overflow: hidden;
     transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .project-box::before,
 .project-box::after {
@@ -1157,16 +1160,16 @@ nav ul li a:hover,
 .cirth{
     width: 400px;
     height: 330px;
-    border-radius: 5px;
+    border-radius: 1px;
     padding: 20px;
     background-color: transparent;
-    border-radius: 30px;
+    border-radius: 9px;
     font-size: 24px;
     cursor: pointer;
     opacity: 0;
     filter: hue-rotate(360deg);
     border-width: 5px;
-    border-color: #007BFF;
+    border-color: #00f7ff;
     box-shadow: h-offset v-offset blur spread color;
     border-style: solid;
     opacity: 0.9;
@@ -1182,17 +1185,21 @@ nav ul li a:hover,
 }
 .namec{
     height: 50px;
-    border: #007BFF 4px solid;
+    border: #00f7ff 4px solid;
     position: relative;
     top: 20px;
     color: white;
     padding: 10px;
     font-size: 14px;
     text-align: left;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 .cirth:hover{
     transform: scale(1.1);
+    border: gold 4px solid;
+    .namec{
+        border: gold 4px solid;
+    }
 }
 .messageimp{
     border: 2px solid green;
