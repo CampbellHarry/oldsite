@@ -276,4 +276,3 @@ button.addEventListener("mousemove", (e) => {
   button.style.setProperty("--y", e.clientY - y);
 });
 //shina ends
-
