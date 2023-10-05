@@ -194,7 +194,16 @@ body {
         width: 90%; 
     }
 }
-
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #000;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #838383;
+    }
+}
 body {
     margin: 0 auto;
     padding: 0px;
