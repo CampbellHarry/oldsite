@@ -1222,28 +1222,28 @@ nav ul li a:hover,
     position: relative;
 }
 .sitepages {
-    background-color: #000; /* Dark background color */
+    background-color: transparent;
     color: white;
-    padding: 20px; /* Add some padding for better spacing */
+    padding: 20px;
     text-align: center;
-    border-top: 5px solid #2e2e2e; /* Slightly darker border color */
+    border-top: 5px solid #2e2e2e;
     margin-bottom: 50px;
 }
 
 .sitepages h1 {
-    margin-bottom: 20px; /* Add some space below the heading */
+    margin-bottom: 20px;
 }
 
 .sitenamehold {
     display: grid;
     grid-template-columns: repeat(2, 160px);
-    gap: 10px; /* Increase gap for better spacing */
-    margin-top: 20px; /* Adjusted margin top */
+    gap: 10px;
+    margin-top: 20px;
     justify-content: center;
 }
 
 .namehold {
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     cursor: pointer;
     overflow: hidden;

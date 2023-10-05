@@ -276,3 +276,18 @@ button.addEventListener("mousemove", (e) => {
   button.style.setProperty("--y", e.clientY - y);
 });
 //shina ends
+const fetchLastCommitDate = async () => {
+    const response = await fetch('https://api.github.com/repos/Campbellharry/CampbellHarry.github.io/commits?per_page=1');
+    const data = await response.json();
+    return data[0].commit.author.date;
+  }
+  
+  const displayLastUpdated = async () => {
+    const lastCommitDate = await fetchLastCommitDate();
+    const formattedDate = new Date(lastCommitDate).toLocaleDateString();
+    const element = document.getElementById('last-updated');
+    element.textContent = `Last updated: ${formattedDate}`;
+  }
+  
+  displayLastUpdated();
+  
