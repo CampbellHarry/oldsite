@@ -1206,3 +1206,45 @@ nav ul li a:hover,
     top: 10px;
     position: relative;
 }
+.sitepages {
+    background-color: #000; /* Dark background color */
+    color: white;
+    padding: 20px; /* Add some padding for better spacing */
+    text-align: center;
+    border-top: 5px solid #2e2e2e; /* Slightly darker border color */
+    margin-bottom: 50px;
+}
+
+.sitepages h1 {
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.sitenamehold {
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    gap: 10px; /* Increase gap for better spacing */
+    margin-top: 20px; /* Adjusted margin top */
+    justify-content: center;
+}
+
+.namehold {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    width: 160px;
+    font-size: 15px;
+    color: white;
+}
+
+.namehold p {
+    margin: 0;
+}
+
+.namehold:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Add a subtle shadow on hover */
+}
