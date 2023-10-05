@@ -199,7 +199,7 @@ body {
         background-color: #000;
     }
 }
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     body{
         background-color: #838383;
     }
@@ -988,7 +988,10 @@ nav ul li a:hover,
   
 
 .linkedin {
-    width: 400px;
+    flex: 1 1 400px;
+    margin: 20px 0;
+    padding: 20px;
+    width: 350px;
     height: auto;
     margin: 20px;
     position: relative;
@@ -1009,7 +1012,7 @@ nav ul li a:hover,
     height: 50px;
     top: 0px;
     border-bottom: #0077B5 5px solid;
-    padding: 5px;
+    padding: 0px;
     text-align: center;
     cursor: pointer;
 }
@@ -1167,8 +1170,8 @@ nav ul li a:hover,
     gap: 20px;
 }
 .cirth{
-    flex: 1 1 400px;
-    width: 400px; /* Fixed width in pixels */
+    flex: 1 1 300px;
+    width: 350px; /* Fixed width in pixels */
     margin: 20px 0;
     padding: 20px;
     background-color: transparent;
@@ -1186,17 +1189,20 @@ nav ul li a:hover,
     height: 200px;
     position: relative;
     border-radius: 0px;
+
 }
 .namec{
     height: 50px;
-    border: #00f7ff 4px solid;
+    width: 355px;
+    border: rgb(0, 225, 255) 4px solid;
     position: relative;
     top: 10px;
     color: white;
     padding: 10px;
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     border-radius: 8px;
+    margin-left: -30px;
 }
 .cirth:hover{
     transform: scale(1.1);
