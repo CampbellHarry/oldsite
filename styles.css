@@ -168,6 +168,9 @@ body {
     nav ul li a {
         border-width: 3px;
     }
+    .sgvf{
+        margin-top: -200px !important;
+    }
     .proj-container {
         grid-template-columns: repeat(1, 127px) !important;
     }
@@ -665,13 +668,13 @@ nav ul li a:hover,
 }
 .hidden2 {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateX(-100px);
     transition: opacity 1s, transform 1.5s ease-out;
 }
 
 .show2 {
     opacity: 1;
-    transform: translateZ(0);
+    transform: translate(0);
     transition: opacity 1s, transform 1.5s ease-out;
 }
 
