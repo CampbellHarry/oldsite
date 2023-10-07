@@ -291,6 +291,7 @@ nav ul li a {
     display: inline;
     position: relative;
     overflow: hidden;
+    
 }
 .underline1:after {
     content: "";
@@ -305,7 +306,7 @@ nav ul li a {
     transition-property: width;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
-    box-shadow: 0 0 10px 1px rgb(0, 195, 255);
+    box-shadow: 0 0 10px 0.4px rgb(0, 195, 255);
 }
 .underline1:hover:after,
 .underline1:focus:after,
