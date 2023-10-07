@@ -80,6 +80,9 @@ body {
         justify-content: center;
         grid-template-columns: repeat(1, -00px) !important;
     }
+    .sgvf{
+        margin-top: -80px !important;
+    }
     .button3{
         width: 300px !important;
         font-size: 20px !important;
@@ -571,9 +574,6 @@ footer {
     border-top-width: 5px; 
     border-top-color: rgb(46, 46, 46); 
     border-top-style: solid; 
-    clip-path: inset(-6px round 10px);
-    animation: huerotate 6s infinite linear;
-    filter: hue-rotate(360deg);
 }
 
 .footer1{
@@ -589,6 +589,9 @@ footer {
     top: 1px;
     cursor: default;
     text-decoration: none;
+    clip-path: inset(-6px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
 
 }
 .footer1 h4{
