@@ -298,9 +298,11 @@ nav ul li a {
     bottom: 0px;
     background: rgb(0, 195, 255);
     height: 4px;
+    top: 30px;
     transition-property: width;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
+    box-shadow: 0 0 10px 1px rgb(0, 195, 255);
 }
 .underline1:hover:after,
 .underline1:focus:after,
@@ -635,14 +637,40 @@ nav ul li a:hover,
 }
 
 
-.hidden{
+.hidden {
     opacity: 0;
-    transition: 0.2s;
+    transform: translateX(100px);
+    transition: opacity 1s, transform 1.5s ease-out;
 }
-.show{
+
+.show {
     opacity: 1;
-    transition: 7s;
+    transform: translateX(0);
+    transition: opacity 1s, transform 1.5s ease-out;
 }
+.hidden1 {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s, transform 1.5s ease-out;
+}
+
+.show1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s, transform 1.5s ease-out;
+}
+.hidden2 {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s, transform 1.5s ease-out;
+}
+
+.show2 {
+    opacity: 1;
+    transform: translateZ(0);
+    transition: opacity 1s, transform 1.5s ease-out;
+}
+
 .about-container {
     flex-wrap: wrap;
     justify-content: space-between;
