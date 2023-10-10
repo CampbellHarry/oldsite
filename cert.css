@@ -94,3 +94,7 @@
 .clica:hover{
     box-shadow: #00eeff 0 0px 5px 1px;
 }
+.sitepages{
+    left: 100px;
+    position: relative;
+}

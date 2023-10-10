@@ -1265,6 +1265,7 @@ nav ul li a:hover,
     text-align: center;
     border-top: 5px solid #2e2e2e;
     margin-bottom: 50px;
+    opacity: 1;
 }
 
 .sitepages h1 {
