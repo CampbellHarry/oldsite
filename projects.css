@@ -1,0 +1,95 @@
+.container11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    background-color: transparent;
+    border: 3px solid #0069d9;
+    margin: 30px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    z-index: 100000;
+}
+
+.ctitle{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.cdesc{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #0069d9;
+}
+
+.card::before {
+    border-image: linear-gradient(to center, transparent, rgb(6, 35, 73), transparent);
+    border-image-slice: 1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+.card::after {
+    border-image: linear-gradient(to left, transparent, rgb(0, 247, 255), transparent);
+    border-image-slice: 1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s;
+}
+
+.card:hover::before,
+.card:hover::after {
+    transform: scaleX(1);
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 200px;
+        font-size: 14px !important;
+        margin: 10px;
+    }
+}
+
+/* Media query for tablet devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .card {
+        width: 50%;
+        margin: 20px;
+    }
+}

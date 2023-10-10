@@ -1063,20 +1063,18 @@ nav ul li a:hover,
     }
 }
 .warnboxc {
-    flex-wrap: wrap;
+    display: flex;
     justify-content: center;
-    border-radius: 10px;
-    margin-top: 50px;
+    align-items: center;
 }
 
 .warnbox{
-    width: 500px;
+    width: 300px;
     height: auto;
-    margin: 20px;
     position: relative;
     font-size: 24px;
     color: #ffffff;
-    border: 3px solid #ffcc00;
+    border: 3px solid #00ff00;
     text-align: center;
 }
 
@@ -1266,6 +1264,8 @@ nav ul li a:hover,
     border-top: 5px solid #2e2e2e;
     margin-bottom: 50px;
     opacity: 1;
+
+    position: relative;
 }
 
 .sitepages h1 {
