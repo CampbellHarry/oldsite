@@ -231,6 +231,7 @@ header {
     border-bottom: rgb(255, 255, 255) 3px solid;
     padding-left: 20px;
     padding-bottom: -100px;
+    margin-bottom: 10px;
     float: left;
 }
 .actions{
