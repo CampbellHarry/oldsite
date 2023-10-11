@@ -18,24 +18,26 @@ function updateNotification(e) {
         case "Moderation Action discussed":
             actions = "Warning.";
             break;
-        case "Username Violation.":
+        case "Username Violation":
             actions = "Your account has been deleted.";
             break;
-        case "Spamming.":
+        case "Spamming":
             actions = "Chat Limited for 2 days";
             break;
-        case "Illegal content.":
+        case "Illegal content":
             actions = "Reported to the correct authorities and Account Termination";
             break;
-        case "Discrimination.":
+        case "Discrimination":
             actions = "Account Suspension for 2 days";
             break;
-        case "Scamming.":
+        case "Scamming":
             actions = "Account Termination";
             break;
-        case "Hacking.":
+        case "Hacking":
             actions = "Account Termination";
             break;
+        default:
+            actions = "Warning - Automated.";
     }
 
     // Update the notification elements with user input and determined action
