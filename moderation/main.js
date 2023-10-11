@@ -37,7 +37,7 @@ function updateNotification(e) {
             actions = "Account Termination";
             break;
         default:
-            actions = "Warning - Automated.";
+            actions = "Warning.";
     }
 
     // Update the notification elements with user input and determined action
