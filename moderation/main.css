@@ -251,6 +251,11 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+#reasonn,
+#prooff{
+    width: 200px;
+}
+
 /* Make the form mobile-friendly */
 @media (max-width: 600px) {
     input[type="text"],
