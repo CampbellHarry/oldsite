@@ -36,8 +36,6 @@ function updateNotification(e) {
         case "Hacking.":
             actions = "Account Termination";
             break;
-        default:
-            actions = "Warning.";
     }
 
     // Update the notification elements with user input and determined action
