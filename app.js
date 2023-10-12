@@ -126,6 +126,9 @@ function cert() {
 function cert1() {
     window.open("https://campbellharry.github.io/certifications#google", "_self")
 }
+function projred() {
+    window.open("https://campbellharry.github.io/projects", "_self")
+}
 // no peek starts
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
@@ -154,6 +157,17 @@ var days = Math.ceil(difference / (1000 * 3600 * 24));
 
 // Find the <h2> element inside the <div class="projdays">
 var h2Element = document.querySelector('.projdays h2');
+
+// Update the content of the <h2> element with the calculated number of days
+h2Element.textContent = days + ' days ago';
+
+var date99 = new Date('10/11/2023');
+var date98 = new Date();
+var difference = date98.getTime() - date99.getTime();
+var days = Math.ceil(difference / (1000 * 3600 * 24));
+
+// Find the <h2> element inside the <div class="projdays">
+var h2Element = document.querySelector('.projdays7 h2');
 
 // Update the content of the <h2> element with the calculated number of days
 h2Element.textContent = days + ' days ago';
