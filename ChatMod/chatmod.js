@@ -96,7 +96,7 @@ function addNewMessage() {
         flagButton.style.cursor = 'pointer';
         document.getElementById('outof').textContent = `${messageCount}`;
 
-        fetch('/chatmod/usernames.txt')
+        fetch('/Chatmod/usernames.txt')
             .then(response => response.text())
             .then(usernamesData => {
                 const usernames = usernamesData.split('\n');
@@ -104,7 +104,7 @@ function addNewMessage() {
                 username.textContent = usernames[randomUsernameIndex];
             });
 
-        fetch('/chatmod/messages.txt')
+        fetch('/Chatmod/messages.txt')
             .then(response => response.text())
             .then(messagesData => {
                 const messages = messagesData.split('\n');
