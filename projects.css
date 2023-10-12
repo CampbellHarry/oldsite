@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .card {
@@ -16,6 +18,7 @@
     overflow: hidden;
     transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
     z-index: 100000;
+
 }
 
 .ctitle{
@@ -75,21 +78,4 @@
 .card:hover::before,
 .card:hover::after {
     transform: scaleX(1);
-}
-
-/* Media query for mobile devices */
-@media only screen and (max-width: 600px) {
-    .card {
-        width: 200px;
-        font-size: 14px !important;
-        margin: 10px;
-    }
-}
-
-/* Media query for tablet devices */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .card {
-        width: 50%;
-        margin: 20px;
-    }
 }
