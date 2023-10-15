@@ -15,9 +15,6 @@ section{
     font-size: xx-large;
 
 }
-
-
-
 /* mobile */
 @media only screen and (max-width: 720px){
     .attention{
