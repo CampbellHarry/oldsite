@@ -1228,14 +1228,13 @@ nav ul li a:hover,
 .namec{
     height: 50px;
     width: 355px;
-    border: rgb(0, 225, 255) 4px solid;
+    border-top: rgb(0, 225, 255) 4px solid;
     position: relative;
     top: 10px;
     color: white;
     padding: 10px;
     font-size: 14px;
     text-align: center;
-    border-radius: 8px;
     border-bottom: none;
     line-height: -100px;
     margin-left: -30px;
@@ -1244,7 +1243,7 @@ nav ul li a:hover,
     transform: scale(1.1);
     border: gold 4px solid;
     .namec{
-        border: gold 4px solid;
+        border-top: gold 4px solid;
     }
 }
 .messageimp{
