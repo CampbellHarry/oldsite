@@ -216,7 +216,6 @@ var h2Element = document.querySelector('.projdays3 h2');
 // Update the content of the <h2> element with the calculated number of days
 h2Element.textContent = days + ' days ago';
 
-
 // lang starts with top bar for days
 
 const date = new Date();
@@ -235,7 +234,6 @@ const translations = {
         afternoon: "Buenas tardes, Bienvenido a mi portafolio!",
         evening: "Buena noche, Bienvenido a mi portafolio!"
     },
-    // Add more languages and translations as needed
 };
 
 function updateWelcomeText() {
