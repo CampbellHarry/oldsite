@@ -1,0 +1,170 @@
+body{
+    margin: 0 auto;
+    padding: 0px;
+    font-family: monospace;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+}
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 400px;
+    font-size: xx-large;
+    color: white;
+}
+.containter{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-right-radius: 40px;
+}
+.holder{
+    width: 87%;
+    height: auto;
+    position: relative;
+    background-color: gray;
+    margin: 5%;
+    border: 4px solid black;
+}
+.head{
+    color: white;
+    text-align: center;
+    margin-top: -10px;
+    border-bottom: 4px solid black;
+}
+.img1{
+    height: 100px;
+    border: white 3px solid;
+}
+.card{
+    height: auto;
+    width: 80%;
+    background-color: #000;
+    position: relative;
+    left: 10%;
+    top: 2%;
+    border: white 2px solid;
+}
+.username{
+    border-bottom: white 2px solid;
+    text-align: center;
+}
+.flags{
+    border-bottom: 3px white solid;
+}
+.flags p{
+    margin-left: 10px;
+}
+.proofs{
+    border-bottom: 3px white solid;
+    align-items: center;
+}
+.proofs p{
+    margin-left: 10px;
+}
+.higher{
+    border: 5px solid white;
+    height: auto;
+    width: 90%;
+    margin-left: 2.5%;
+    padding: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+.img2{
+    height: 50px;
+    border: white 3px solid;
+    margin-bottom: 10px;
+}
+.higher1{
+    margin-top: -5px;
+    margin-left: -5px;
+}
+.higher2{
+    float: right;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+#warn{
+    background-color: #000;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    font-size: auto;
+}
+#suspend{
+    background-color: #000;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    font-size: auto;
+    width: auto;
+    cursor: pointer;
+}
+#ban{
+    background-color: #000;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    font-size: auto;
+}
+#noact{
+    background-color: #000;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+    font-size: auto;
+}
+#warn:hover{
+    background-color: rgb(230, 255, 4);
+    color: black;
+}
+#suspend:hover{
+    background-color: rgb(255, 153, 0);
+    color: black;
+}
+#ban:hover{
+    background-color: rgb(255, 0, 0);
+    color: black;
+}
+#noact:hover{
+    background-color: rgb(0, 255, 0);
+    color: black;
+}
