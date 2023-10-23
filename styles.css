@@ -305,7 +305,7 @@ nav ul li a {
     bottom: 0px;
     background: rgb(0, 195, 255);
     height: 4px;
-    top: 10px;
+    top: 20px;
     transition-property: width;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
@@ -688,8 +688,10 @@ nav ul li a:hover,
     grid-template-columns: repeat(3, 427px);
     display: grid;
   }
-  
-
+  .about-container:last-child {
+    grid-column: span 2;
+    justify-self: center;
+  }
   .about {
     width: 200px;
     height: 200px;
@@ -808,7 +810,7 @@ nav ul li a:hover,
   }
 
   .underline {
-    border-bottom: 2px solid rgb(0, 195, 255);
+    border-bottom: 5px solid rgb(0, 195, 255);
   }
 
 .box1-text {
