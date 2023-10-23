@@ -305,7 +305,7 @@ nav ul li a {
     bottom: 0px;
     background: rgb(0, 195, 255);
     height: 4px;
-    top: 30px;
+    top: 10px;
     transition-property: width;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
@@ -808,7 +808,7 @@ nav ul li a:hover,
   }
 
   .underline {
-    border-bottom: 5px solid rgb(0, 195, 255);
+    border-bottom: 2px solid rgb(0, 195, 255);
   }
 
 .box1-text {
@@ -1135,7 +1135,6 @@ nav ul li a:hover,
 }
 
 .linkedc {
-
     text-align: center;
     padding: 20px;
     width: 250px;
@@ -1143,6 +1142,7 @@ nav ul li a:hover,
     border-radius: 10px;
     transition: transform 0.3s ease;
     left: 0px;
+    
 }
 
 .linkedc:hover {
@@ -1182,10 +1182,6 @@ nav ul li a:hover,
     transform: scale(1.05);
     top: 18px;
     filter: brightness(1.2);
-}
-.linkedt:hover{
-    color: gold;
-    transition: 1s ease-out;
 }
 .button3{
     border-radius: 10px;
