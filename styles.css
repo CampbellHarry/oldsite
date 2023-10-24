@@ -305,7 +305,7 @@ nav ul li a {
     bottom: 0px;
     background: rgb(0, 195, 255);
     height: 4px;
-    top: 20px;
+    top: 30px;
     transition-property: width;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
