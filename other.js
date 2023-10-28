@@ -64,3 +64,23 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     })
 })
+
+// offline?
+const offlineMarker = document.getElementById('offline-marker');
+
+function updateOfflineMarker() {
+  if (!navigator.onLine) {
+    offlineMarker.style.display = 'block';
+    console.log('offline');
+  } else {
+    offlineMarker.style.display = 'none';
+    console.log('online');
+  }
+}
+
+// Initial check and event listeners
+updateOfflineMarker();
+
+window.addEventListener('online', updateOfflineMarker);
+window.addEventListener('offline', updateOfflineMarker);
+// offline ends

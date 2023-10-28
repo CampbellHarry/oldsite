@@ -261,33 +261,6 @@ function changeLanguage(language) {
 }
 // date ends
 
-// offline?
-const offlineMarker = document.getElementById('offline-marker');
-
-function updateOfflineMarker() {
-  if (!navigator.onLine) {
-    offlineMarker.style.display = 'block';
-  } else {
-    offlineMarker.style.display = 'none';
-  }
-}
-
-// Initial check and event listeners
-updateOfflineMarker();
-
-window.addEventListener('online', updateOfflineMarker);
-window.addEventListener('offline', updateOfflineMarker);
-
-// mobile?
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuButton = document.getElementById('mobileMenuButton');
-    const menuList = document.getElementById('menuList');
-
-    mobileMenuButton.addEventListener('click', function() {
-        menuList.classList.toggle('show');
-    });
-});
-// mobile ends
 //shina
 const button = document.querySelector(".shiny");
 
