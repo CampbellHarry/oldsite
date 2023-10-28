@@ -81,7 +81,7 @@ body {
         grid-template-columns: repeat(1, -00px) !important;
     }
     .sgvf{
-        margin-top: -80px !important;
+        margin-top: -0px !important;
     }
     .button3{
         width: 300px !important;
@@ -169,7 +169,7 @@ body {
         border-width: 3px;
     }
     .sgvf{
-        margin-top: -200px !important;
+        margin-top: -800px !important;
     }
     .proj-container {
         grid-template-columns: repeat(1, 127px) !important;
@@ -191,6 +191,9 @@ body {
     }
     .about {
         width: 30%;
+    }
+    .sgvf{
+        margin-top: -10000px !important;
     }
 }
 
