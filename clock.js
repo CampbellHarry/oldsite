@@ -105,9 +105,9 @@ function getDate() {
 }
 
 let date = new Date();
-let dayOfWeek = date.toLocaleDateString("en-US", { weekday: "long" });
+let dayOfWeek = date.toLocaleDateString("en-UK", { weekday: "long" });
 
-let month = date.toLocaleDateString("en-US", { month: "long" });
+let month = date.toLocaleDateString("en-UK", { month: "long" });
 
 let st = "st";
 let nd = "nd";
