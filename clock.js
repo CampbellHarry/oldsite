@@ -36,9 +36,9 @@ function showTime() {
 
     // Define different gradients for different times of day
     const gradients = [
-        "linear-gradient(to bottom right, #f9d423, #ff4e50)", // Morning
-        "linear-gradient(to bottom right, #ff416c, #ff4b2b)", // Afternoon
-        "linear-gradient(to right, #87CEFA, #ADD8E6, #F0E68C)", // Evening
+        "linear-gradient(to right, #FFD700, #FF6347)", // Morning
+        "linear-gradient(to right, #87CEFA, #ADD8E6, #F0E68C)", // Afternoon
+        "linear-gradient(to right, #FF6F61, #FF8C4B, #FFA64D, #FFC154, #FFD95A)", // Evening
         "linear-gradient(to right, #0F52BA, #143D5C, #000000)" // Night
     ];
 
@@ -58,14 +58,21 @@ function showTime() {
             box1.style.background = gradients[0];
             box1.style.color = "white";
             box2.style.background = gradients[0];
+            box2.style.color = "white";
             box3.style.background = gradients[0];
+            box3.style.color = "white";
             box4.style.background = gradients[0];
+            box4.style.color = "white";
         } else if (hourInt >= 12 && hourInt < 18) {
             // Afternoon (12 PM to 5:59 PM)
             box1.style.background = gradients[1];
+            box1.style.color = "white";
             box2.style.background = gradients[1];
+            box3.style.color = "white";
             box3.style.background = gradients[1];
+            box3.style.color = "white";
             box4.style.background = gradients[1];
+            box4.style.color = "white";
         } else if (hourInt >= 18 && hourInt < 20) {
             // Evening (6 PM to 9:59 PM)
             box1.style.background = gradients[2];
