@@ -66,13 +66,13 @@ function showTime() {
         } else if (hourInt >= 12 && hourInt < 18) {
             // Afternoon (12 PM to 5:59 PM)
             box1.style.background = gradients[1];
-            box1.style.color = "white";
+            box1.style.color = "black";
             box2.style.background = gradients[1];
-            box3.style.color = "white";
+            box2.style.color = "black";
             box3.style.background = gradients[1];
-            box3.style.color = "white";
+            box3.style.color = "black";
             box4.style.background = gradients[1];
-            box4.style.color = "white";
+            box4.style.color = "black";
         } else if (hourInt >= 18 && hourInt < 20) {
             // Evening (6 PM to 9:59 PM)
             box1.style.background = gradients[2];
@@ -95,7 +95,7 @@ function showTime() {
             box4.style.color = "white";
         }
     if (!is24hr) {
-        test
+        console.log("12hr");
     }
     }
 }
