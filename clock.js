@@ -124,7 +124,7 @@ let wat =
         : th;
 
 let full =
-    dayOfWeek + " the " + date.getDate() + wat + " " + month + ", " + date.getFullYear();
+    dayOfWeek + " the " + date.getDate() + wat + " of " + month + ", " + date.getFullYear();
 
 document.getElementById("datee").innerHTML = full;
 
