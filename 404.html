@@ -64,5 +64,21 @@
         </div>
     </footer>
     <script src="other.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        // Check if the dummy file exists
+        fetch('dummy.txt')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Dummy file not found');
+                }
+                // Reload the page
+                location.reload();
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    });
+    </script>
 </body>
 </html>
