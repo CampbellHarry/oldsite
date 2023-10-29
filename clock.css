@@ -16,6 +16,7 @@
     position: relative;
     font-size-adjust: inherit;
     padding: 10px;
+    word-wrap: break-word;
     font-family: 'Courier New', Courier, monospace;
 }
 #date{
