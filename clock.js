@@ -138,5 +138,5 @@ const button = document.getElementById("myButton");
 btn.onclick = function () {
     is24hr = !is24hr;
     setInterval(1000)
-        document.getElementById("btn").innerHTML = is24hr ? "12hr" : "24hr";
+        document.getElementById("btn").innerHTML = is24hr ? "24hr" : "12hr";
 };
