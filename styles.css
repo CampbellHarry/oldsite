@@ -250,7 +250,6 @@ header {
     padding: 20px 0;
     margin-bottom: 0px;
     width: 100%;
-    background-color: #333333;
     align-items: center;
     z-index: 10000000000;
 }
@@ -258,6 +257,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
+    backdrop-filter: blur(10px);
 }
 
 nav ul {
@@ -265,6 +265,8 @@ nav ul {
     margin: 30px 0;
     padding: 0;
     display: block;
+    position: fixed;
+    z-index: 99999000000;
 }
 
 nav ul li {
@@ -279,6 +281,8 @@ nav ul li a {
     padding: 3px 20px;
     transition: background-color 0.6s ease;
     border-width: 4px;
+    position: fixed;
+    z-index: 99999000000;
 }
 
 .content {
@@ -1293,12 +1297,11 @@ nav ul li a:hover,
     font-size: 15px;
     color: white;
 }
-
 .namehold p {
     margin: 0;
 }
-
 .namehold:hover {
     transform: scale(1.05); /* Slightly scale up on hover */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Add a subtle shadow on hover */
 }
+
