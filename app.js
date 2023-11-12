@@ -81,7 +81,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function redirectToGitHub() {
     window.open("https://github.com/CampbellHarry/Banking1", "_blank");
 }
-
+function blog() {
+    window.open("https://campbellharry.github.io/blog", "_self");
+}
 // for github clicker ticket
 
 function redirectToGitHub2() {
