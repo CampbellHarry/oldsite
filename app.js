@@ -131,6 +131,9 @@ function cert1() {
 function projred() {
     window.open("https://campbellharry.github.io/projects", "_self")
 }
+function hexxa() {
+    window.open("https://github.com/CampbellHarry/hexxa", "_self")
+}
 // no peek starts
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
