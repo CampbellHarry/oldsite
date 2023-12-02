@@ -57,7 +57,7 @@ body {
     border-bottom-right-radius: 140px;
     border-top-right-radius: 140px;
     position: relative;
-    max-width: 15%;
+    max-width: 130px;
     max-height: 100px;
     min-height: 10px;
     min-width: 10%;
@@ -301,6 +301,12 @@ nav {
     transition: 1s ease-in-out;
     z-index: 1000;
     top: -10px;
+}
+@media screen and (max-width: 480px) {
+    .toplogo{
+        display: none;
+    }
+    
 }
 nav ul {
     list-style: none;
