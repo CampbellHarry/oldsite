@@ -157,9 +157,6 @@ body {
     .glower1{
         box-shadow: 0 0 300px 150px blue !important;
     }
-    .proj-container {
-        grid-template-columns: repeat(1, 127px) !important;
-    }
     .linkedinc{
         grid-template-columns: repeat(1, 127px) !important;
     }
@@ -202,9 +199,6 @@ body {
     .sgvf{
         margin-top: -800px !important;
     }
-    .proj-container {
-        grid-template-columns: repeat(1, 127px) !important;
-    }
     .linkedinc{
         grid-template-columns: repeat(1, 127px) !important;
     }
@@ -236,12 +230,12 @@ body {
 }
 @media (prefers-color-scheme: dark) {
     body{
-        background-color: #000;
+        background-color: #ffffff;
     }
 }
 @media (prefers-color-scheme: light) {
     body{
-        background-color: #838383;
+        background-color: #ffffff;
     }
 }
 body {
@@ -449,7 +443,10 @@ main {
         opacity: 1;
     }
 }
-
+.toplogo:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
 .box3 {
     text-align: center;
     
@@ -478,12 +475,14 @@ main {
 
 
 .proj-container {
-    display: grid;
-    grid-template-columns: repeat(2, 427px);
-    gap: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     border-radius: 10px;
+    gap: 20px;
     justify-content: center;
-    margin-top: 50px;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .project-box {
