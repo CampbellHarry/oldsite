@@ -25,7 +25,8 @@
     <meta name="description" content="Explore Harry Campbell's diverse portfolio, showcasing his expertise and creativity.">
 </head>
 <body>
-    <header>
+<div class="loadingscreen">
+    <header class="loadingscreen">
     <nav class="ae" style="margin-bottom: 60px;">
         <div class="mobile-menu-button" id="mobileMenuButton">Menu</div>
         <ul class="menu-list" id="menuList" id="gradient-border-container">
@@ -37,20 +38,12 @@
     </nav>
     <a href="https://hdev.uk/"><img src="img/H.png" class="toplogo" alt="H logo"></a>
 </header>
-<main class="shiny">
+<main class="shiny loadingscreen">
     <section class="hidden1 container responsive red" style="max-height: 60vh;">
         <div class="box1-text"><span>Hello, I am </span><span class="underline" style="color: rgb(0, 195, 255);">Harry Campbell</span></div>
         <div class="stars1">
         </div>
-        <div class="box2-text" data-text="A professional frontend developer"><span style="color: gold;">A </span><span class="underline" style="color: rgb(0, 195, 255);">polished</span><span style="color: #FFC0CB;"> front-end </span><span style="color: #007BFF;">developer.</span></div>
-        <div class="box2-text" data-text=""><span style="color: gold;">A </span><span class="underline" style="color: rgb(0, 195, 255);">Certified</span><span style="color: #FFC0CB;"> Cyber-Security </span><span style="color: #007BFF;">analyst.</span></div>
-        <div class="box2-text" data-text="A moderation"><span style="color: gold;">A </span><span class="underline" style="color: rgb(0, 195, 255);">streamlined</span><span style="color: #FFC0CB;"> moderation systems </span><span style="color: #007BFF;">engineer.</span></div>
-        <div class="box2-text" data-text="A competent python developer"><span style="color: gold;">A </span><span class="underline" style="color: rgb(0, 195, 255);">competent</span><span style="color: #FFC0CB;"> Python </span><span style="color: #007BFF;">developer.</span></div>
-        <div class="box2-text" data-text="A proficient IT Specialist"><span style="color: gold;">A </span><span class="underline" style="color: rgb(0, 195, 255);">proficient</span><span style="color: #FFC0CB;"> IT</span><span style="color: #007BFF;"> connoisseur.</span></div>
-        <div class="box2-text" data-text="A security-focused developer"><span style="color: gold;">A </span><span class="underline" style="color: rgb(0, 195, 255);">security-focused</span><span style="color: #007BFF;"> developer.</span></div>
-        <div class="box2-text" data-text="A intermediate back-end developer"><span style="color: gold;">A </span><span class="underline" style="color: rgb(0, 195, 255);">intermediate</span><span style="color: #FFC0CB;"> back-end <span style="color: #007BFF;">developer.</span></div>
-        <div class="box2-text" data-text="A amateur React developer"><span style="color: gold;">A </span><span class="underline" style="color: rgb(0, 195, 255);">amateur</span><span style="color: #FFC0CB;"> React </span><span style="color: #007BFF;">developer.</span></div>
-        <div class="box2-text" data-text="A professional graphical designer."><span style="color: gold;">A </span><span class="underline" style="color: rgb(0, 195, 255);">professional</span><span style="color: #FFC0CB;"> graphical <span style="color: #007BFF;">designer.</span></div>
+        <div class="box2-text" data-text="A professional frontend developer"><span style="color: white;">A </span><span class="underline" style="color: #0CC0DF;">certified</span><span style="color: #0CC0DF;"> information-security </span><span style="color: #007BFF;">specialist.</span></div>
     </div>
     </div>
     <div class="box3b">
@@ -58,7 +51,6 @@
     </div>
     <div class="stars">
     </div>
-</main>
 <div id="offline-marker"></div>
 <section id="projects" class="hidden box3 container responsive" style="min-height: 10px;">
             <div class="box3b">
@@ -66,9 +58,6 @@
                 </div>
             </div>
         </section>
-        <div class="coolanim hidden1">
-            <h2>Projects</h2>
-        </div>
         <section id="projects" class="hidden proj-container responsive">
             <div class="project-box container responsive hidden1" onclick="hexxa()">
                 <div class="projrole">
@@ -133,26 +122,7 @@
                     In this project I created a replica banking website with transaction logging and anti-fraud systems to help prevent fraud with the fake currency created for the application.
                 </div>
             </div>
-            <div class="project-box hidden1" onclick="redirectToGitHub5()">
-                <div class="projrole">
-                    <h2>Founder | Developer</h2>
-                </div>
-                <div class="">
-                    <h2></h2>
-                </div>
-                <div class="projused">
-                    <img src="/img/HTML5_logo_and_wordmark.svg.png" alt="HTML icon" style="position: relative; top: 7px; left: 0px; height: 35px;">
-                    <img src="/img/javascript.webp" alt="JavaScript Icon" style="position: relative; top: 7px; left: 0px; height: 35px;">
-                    <img src="/img/CSS3_logo_and_wordmark.svg.png" alt="CSS icon" style="position: relative; top: 7px; left: 0px; height: 35px;">
-                    <img src="/img/Python-logo-notext.svg.png" alt="JSON icon" style="position: relative; top: 7px; left: 0px; height: 35px;">
-                </div>
-                <div class="projname">
-                    <h2>Pre-Made Assets</h2>
-                </div>
-                <div class="projdis">
-                    During this project I focused on the moderation side of websites making advanced features for warning logging/warn screens and currently making a admin dashboard.
-                </div>
-            </div>
+          
             <div class="project-box hidden1" style="cursor: default;">
                 <div class="projrole">
                     <h2>Student</h2>
@@ -213,14 +183,8 @@
                 </div>
             </div>
     </section>
-    <div class="coolanim hidden1">
-        <h2>Projects</h2>
-    </div>
     <br>
     <br>
-    <div class="coolanim hidden1">
-        <h2>Skills</h2>
-    </div>    
         <section class="hidden1 about-container container responsive" style="min-height: 40px !important;" id="about">
             <div class="about" style="width: auto; height: auto; left: 90px; position: relative;">
                 <span style="color: gray;">Discover the </span><span style="color: rgb(0, 195, 255);">programming languages</span> and <span style="color: rgb(0, 195, 255);">state-of-the-art technologies</span><span style="color: gray;"> that power my work.</span></div>
@@ -300,19 +264,13 @@
                 <div class="glower" style="left: 50px; top: -100px;"></div>
             </div>
         </section>
-        <div class="coolanim hidden1">
-            <h2>Skills</h2>
-        </div>
         <br>
-        <br>
-        <div class="coolanim hidden1">
-            <h2>Blog</h2>
-        </div>  
+        <br> 
         <section>
             <div class="box3c hidden1">
                 <h1 style="text-align: center; margin-top: 180px;  font-size: 30px; color: #00f7ff;"><u>Blog</u></h1>
             <div class="blog1">
-                <div class="project-box container responsive hidden1" onclick="blog()">
+                <div class="project-box container responsive" onclick="blog()">
                     <div class="projrole">
                         <h2>Latest Blog Post</h2>
                     </div>
@@ -332,14 +290,8 @@
                 </div>
             </div>
         </section>
-        <div class="coolanim hidden1">
-            <h2>Blog</h2>
-        </div>
         <br>
         <br>
-        <div class="coolanim hidden1">
-            <h2>Certifications</h2>
-        </div> 
         <div class="box3c hidden2">
             <h1 style="text-align: center; margin-top: 180px;  font-size: 30px; color: #00f7ff;"><u>Certifications.</u></h1>
         </div>
@@ -397,14 +349,8 @@
         </section>
         <br>
         <br>
-        <div class="coolanim hidden1">
-            <h2>Certifications</h2>
-        </div>
         <br>
         <br>
-        <div class="coolanim hidden1">
-            <h2>Recommendations</h2>
-        </div> 
         <div class="box3c hidden">
             <h1 style="text-align: center; margin-top: 180px;  font-size: 30px;"><u>Linkedin</u> <span style="color: gold;"><u>Recommendations.</u></span></u></h1>
             </div>
@@ -422,9 +368,6 @@
                 <p style="font-size: 19px;">Personally, I have worked alongside Harry as a co-worker or under Harry on several projects such as games & websites. I can vouch for his exceptional abilities in problem-solving & project management.</p>
             </div>
         </section>
-        <div class="coolanim hidden1">
-            <h2>Recommendations</h2>
-        </div> 
         <section class="hidden2" id="contact" style="min-height: 40px !important;">
             <div class="box6">
                 <h1 style="text-align: center; font-size: 40px;"><span style="color: #4CAF50;"><u>Lets</u></span> <span style="color: #FFA500;"><u>build</u></span> <span style="color: #8402e0;"><u>something</u></span> <span style="color: rgb(0, 195, 255);"><u>extraordinary</u></span><span style="color: #009688;"> <u>together.</u></span></h1>
@@ -488,7 +431,7 @@
                 </a>
             </div>
         </section>
-    </main>
+</main>
     <footer>
         <div class="social-links hidden">
             <div class="github" onclick="redirectTogit()">
@@ -500,7 +443,7 @@
         </div>
         <div class="footer1">
             <img src="img/H2.png" class="expandyt">
-            <a href="https://hdev.uk" target="_blank" style="text-decoration: none;" ><h4>hdev.uk <br><span style="color: gray; text-shadow: none; font-size: 20px;">hello@hdev.uk</span></h4></a>
+            <a href="https://hdev.uk" target="_blank" style="text-decoration: none;" ><h4>hdev.uk<br><span style="color: gray; text-shadow: none; margin-bottom: 100px; font-size: 20px;">hello@hdev.uk</span></h4></a>
         </div>
         <div class="sitepages hidden2">
             <h1><u>Site Pages</u></h1>
@@ -558,6 +501,13 @@
             console.error(error);
         });
 });
+</script>
+<script>
+    function waitforall() {
+        setTimeout(function() {
+            document.getElementsByName("loadingscreen").style.display = "none";
+        }, 10);
+    }
 </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=IBM+Plex+Sans:wght@700&family=Josefin+Sans:wght@500&family=Kanit:ital,wght@1,700&family=Montserrat:wght@600&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&family=Outfit&display=swap');
 /* Color Palette */
 :root {
     --text: #ffffff;
@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 html, body {
     overflow-x: hidden;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 body {
     position: relative;
@@ -63,7 +63,7 @@ body {
     min-width: 10%;
     text-align: center;
     top: 0;
-    z-index: 102346234634634;
+    z-index: 104634634;
     transform: translateX(0);
     display: flex;
     flex-direction: column;
@@ -241,12 +241,16 @@ body {
 body {
     margin: 0 auto;
     padding: 0px;
-    font-family: monospace;
+    font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
     max-width: 100%;
     background-color: #000;
     background-image: url(/img/background_noisy.webp);
     overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
 }
 .theme-switch {
     position: relative;
@@ -260,6 +264,7 @@ body {
 
 h1, p {
     margin: 20px;
+    
 }
 
 section{
@@ -267,6 +272,7 @@ section{
     place-items: center;
     align-items: center;
     min-height: 400px;
+    font-family: 'Roboto', sans-serif;
     font-size: xx-large;
 }
 
@@ -274,6 +280,7 @@ header {
     text-align: center;
     padding: 20px 0;
     margin-bottom: 0px;
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     align-items: center;
     z-index: 10000000000;
@@ -284,6 +291,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    font-family: 'Roboto', sans-serif;
 }
 .toplogo{
     height: 50px;
@@ -338,6 +346,7 @@ nav ul li a {
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 .underline1 {
     display: inline;
@@ -422,7 +431,6 @@ main {
     content: attr(data-text);
     background-clip: text;
     -webkit-background-clip: text;
-    color: linear-gradient(45deg, gold, #a200ff);
     opacity: 1;
     animation: move 1s forwards;
     background-clip: text;
@@ -446,10 +454,18 @@ main {
 .toplogo:hover{
     transform: scale(1.2);
     transition: 0.5s ease-in-out;
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
 }
 .box3 {
     text-align: center;
-    
     margin: 0;
     padding: 0;
     border-radius: 25px;
@@ -647,6 +663,7 @@ footer {
 .footer1{
     height: 100px;
     width: 400px;
+
     background-color: transparent;
     left: 4.5%;
     margin: 0 -100px 10px 10px;
@@ -881,13 +898,12 @@ nav ul li a:hover,
   }
 
 .box1-text {
-  background-image: linear-gradient(45deg, gold, #a200ff);
+    color: white;
   animation: moveGradient1 5s linear infinite;
 }
 
 .box2-text {
   display: none;
-  background-image: linear-gradient(45deg, gold, #a200ff);
   animation: moveGradient2 5s linear infinite;
 }
 
@@ -1185,12 +1201,13 @@ nav ul li a:hover,
 }
 .expandyt:hover{
     transform: scale(1.2);
+    height: 100px;
 }
 .expandyt{
-    height: 60px; 
-    width: 60px; 
+    height: 40px; 
+    width: 50px; 
     border-radius: 10px;
-    transition: 1s ease-in-out
+    transition: 1s ease-in-out;
 }
 .container1 {
     display: grid;

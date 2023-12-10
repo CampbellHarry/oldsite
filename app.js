@@ -27,8 +27,6 @@ textElements1[currentIndex1].style.display = 'inline';
 textElements2[currentIndex2].style.display = 'inline';
 
 
-setInterval(showNextText, 4000);
-// Text change script ends
 
 
 // scroll smother starts
