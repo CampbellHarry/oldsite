@@ -129,7 +129,7 @@ body {
     }
     .box1-text{
         font-size: 25px !important;
-        text-align: center;
+        text-align: left;
         color: white !important;
     }
     .box2-text{
@@ -421,20 +421,6 @@ main {
     animation: huerotate 6s infinite linear;
     filter: hue-rotate(360deg);
     position: absolute;
-}
-
-.box1-text::after {
-    content: attr(data-text);
-    background-clip: text;
-    -webkit-background-clip: text;
-    opacity: 1;
-    animation: move 1s forwards;
-    background-clip: text;
-    animation: huerotate 6s infinite linear;
-    filter: hue-rotate(360deg);
-
-    border-width: 4px;
-    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
 }
 
 @keyframes move {
@@ -1188,27 +1174,22 @@ nav ul li a:hover,
     color: white;
     text-shadow: none;
 }
-.herocontainer{
+.herocontainer {
     display: flex;
+    flex-direction: column;
     position: relative;
     width: 100%;
     height: 100%;
     background-color: transparent;
     margin-bottom: -50px;
 }
-.socials{
-    display: flex;
-    position: relative;
-    align-items: center;
-    background-color: transparent;
-}
+
 .view-work-button {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center; /* Updated to center the button horizontally */
+    align-items: flex-start;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -0vh;
     margin: 20px;
 }
 
@@ -1221,7 +1202,6 @@ nav ul li a:hover,
     font-size: 16px;
     border: black 2px solid;
     cursor: pointer;
-    
     transition: all 0.3s ease-in-out;
 }
 
